@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1C13"/>
+      <stop offset="100%" stop-color="#050A07"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <rect width="400" height="300" fill="url(#glow)"/>
+  <rect x="15" y="15" width="370" height="270" rx="12" fill="none" stroke="#D4AF37" stroke-opacity="0.2" stroke-width="1.5"/>
+  
+  <!-- Icon container -->
+  <g transform="translate(170, 75) scale(2.5)">
+    <path d="M12 4v16M4 12h16" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Content -->
+  <text x="200" y="210" text-anchor="middle" fill="#FFFFFF" font-family="Segoe UI, sans-serif" font-weight="700" font-size="18">Wrist Forearm Blaster</text>
+  <rect x="150" y="225" width="100" height="22" rx="11" fill="#D4AF37" fill-opacity="0.15" stroke="#D4AF37" stroke-opacity="0.4"/>
+  <text x="200" y="240" text-anchor="middle" fill="#D4AF37" font-family="Segoe UI, sans-serif" font-weight="600" font-size="11" letter-spacing="1">ACCESSORIES</text>
+  <text x="370" y="40" text-anchor="end" fill="#D4AF37" font-family="Segoe UI, sans-serif" font-weight="800" font-size="14" opacity="0.6">#55</text>
+  <text x="30" y="40" fill="#E2E8F0" font-family="Segoe UI, sans-serif" font-weight="700" font-size="12" letter-spacing="2" opacity="0.8">TGM INFINITY FIT</text>
+</svg>

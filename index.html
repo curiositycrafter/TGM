@@ -1,0 +1,1543 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The Gym Moments — Coimbatore</title>
+<meta name="description" content="The Gym Moments, Coimbatore. 71 machines, full AC, an open-air terrace and a live kitchen where you cook your own post-workout meal. Coached by Dinesh M.">
+<meta name="theme-color" content="#03190F">
+<meta property="og:title" content="The Gym Moments — Coimbatore">
+<meta property="og:description" content="71 machines, full AC, open terrace, and a kitchen you actually cook in. 46 members and counting.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,100..900&family=Schibsted+Grotesk:wght@400..800&display=swap" rel="stylesheet">
+<style>
+/* ── tokens ─────────────────────────────────────────────────────── */
+:root{
+  /* monochrome — shades carry the hierarchy, not hue */
+  --paper:#F3F3F1; --card:#FFFFFF; --band:#0B0B0B; --band-ink:#F6F6F4;
+  --ink:#0B0B0B; --mute:#6B6B69; --hair:#0B0B0B24; --hair-2:#0B0B0B12;
+  --kum:#0B0B0B; --kum-soft:#0B0B0B0f; --on-kum:#FFFFFF;
+  --mint:#0B0B0B;
+  --h1:#0B0B0B;--h2:#2E2E2E;--h3:#454545;--h4:#5C5C5C;--h5:#1C1C1C;--h6:#383838;--h7:#525252;
+  --shadow:0 1px 0 #0b0b0b0d;
+  --grain:.05;
+}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+  --paper:#000000; --card:#121212; --band:#0A0A0A; --band-ink:#FAFAFA;
+  --ink:#FAFAFA; --mute:#949494; --hair:#FAFAFA26; --hair-2:#FAFAFA12;
+  --kum:#FFFFFF; --kum-soft:#FFFFFF14; --on-kum:#000000;
+  --mint:#FFFFFF;
+  --h1:#FFFFFF;--h2:#DBDBDB;--h3:#BCBCBC;--h4:#9E9E9E;--h5:#EFEFEF;--h6:#CACACA;--h7:#AEAEAE;
+  --shadow:none;
+  --grain:.07;
+}}
+:root[data-theme="dark"]{
+  --paper:#000000; --card:#121212; --band:#0A0A0A; --band-ink:#FAFAFA;
+  --ink:#FAFAFA; --mute:#949494; --hair:#FAFAFA26; --hair-2:#FAFAFA12;
+  --kum:#FFFFFF; --kum-soft:#FFFFFF14; --on-kum:#000000;
+  --mint:#FFFFFF;
+  --h1:#FFFFFF;--h2:#DBDBDB;--h3:#BCBCBC;--h4:#9E9E9E;--h5:#EFEFEF;--h6:#CACACA;--h7:#AEAEAE;
+  --shadow:none;
+  --grain:.07;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Schibsted Grotesk",system-ui,-apple-system,Segoe UI,sans-serif;
+  font-size:clamp(15px,.55vw + 14px,17px);line-height:1.55;
+  overflow-x:hidden;
+}
+body::before{ /* paper grain */
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:var(--grain);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+h1,h2,h3,.disp{font-family:Anybody,"Arial Narrow",system-ui,sans-serif;font-weight:800;line-height:.92;letter-spacing:-.01em;margin:0;font-variation-settings:"wdth" 78,"wght" 800}
+p{margin:0 0 1em}
+a{color:inherit}
+img,svg{max-width:100%}
+::selection{background:var(--kum);color:var(--on-kum)}
+:focus-visible{outline:3px solid var(--kum);outline-offset:3px;border-radius:2px}
+.skip{position:absolute;left:-9999px;top:0;z-index:99;background:var(--kum);color:var(--on-kum);padding:.7rem 1rem;font-weight:700}
+.skip:focus{left:.5rem;top:.5rem}
+.wrap{width:min(1180px,100% - 2.4rem);margin-inline:auto}
+@media(max-width:640px){.wrap{width:min(1180px,100% - 1.6rem)}}
+
+/* ── header ─────────────────────────────────────────────────────── */
+.rail{position:fixed;top:0;left:0;right:0;height:3px;background:var(--hair-2);z-index:60}
+.rail i{display:block;height:100%;width:0;background:var(--kum);transition:width .1s linear}
+header{position:fixed;top:0;left:0;right:0;z-index:55;padding:.85rem 0;transition:background .3s,backdrop-filter .3s,border-color .3s;border-bottom:1px solid transparent}
+header.stuck{background:color-mix(in srgb,var(--paper) 86%,transparent);backdrop-filter:blur(14px) saturate(1.3);border-bottom-color:var(--hair-2)}
+.bar{display:flex;align-items:center;gap:1.1rem}
+.logo{display:flex;align-items:center;gap:.55rem;text-decoration:none;font-family:Anybody;font-weight:900;font-variation-settings:"wdth" 60,"wght" 900;font-size:1.32rem;letter-spacing:.01em;flex:none}
+.logo svg{width:28px;height:28px;color:var(--kum)}
+.logo small{display:block;font-family:"Schibsted Grotesk";font-weight:500;font-size:.56rem;letter-spacing:.14em;color:var(--mute);text-transform:uppercase;margin-top:1px}
+nav.main{display:flex;gap:.2rem;margin-left:auto}
+nav.main a{position:relative;text-decoration:none;font-size:.88rem;font-weight:600;padding:.4rem .62rem;border-radius:99px;color:var(--mute);transition:color .2s,background .2s}
+nav.main a:hover{color:var(--ink);background:var(--hair-2)}
+nav.main a[aria-current="true"]{color:var(--ink);background:var(--kum-soft);box-shadow:inset 0 -2px 0 var(--ink)}
+.tools{display:flex;align-items:center;gap:.4rem;margin-left:auto}
+nav.main + .tools{margin-left:.4rem}
+.chip{display:inline-flex;align-items:center;gap:.38rem;border:1px solid var(--hair);background:transparent;color:var(--ink);border-radius:99px;padding:.36rem .7rem;font:inherit;font-size:.78rem;font-weight:700;cursor:pointer;transition:border-color .2s,background .2s,color .2s}
+.chip:hover{border-color:var(--kum);color:var(--kum)}
+.chip svg{width:15px;height:15px}
+.lang{padding:.3rem;gap:0}
+.lang b{padding:.14rem .48rem;border-radius:99px;font-size:.72rem;font-weight:800;letter-spacing:.03em}
+.lang b[data-on]{background:var(--kum);color:var(--on-kum)}
+.status{font-size:.72rem;font-weight:700;color:var(--mute);display:inline-flex;align-items:center;gap:.4rem;border:1px solid var(--hair);border-radius:99px;padding:.34rem .66rem}
+.status i{width:7px;height:7px;border-radius:99px;background:var(--mute);flex:none}
+.status.open i{background:var(--mint);box-shadow:0 0 0 0 color-mix(in srgb,var(--mint) 70%,transparent);animation:pulse 2.6s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 7px transparent}100%{box-shadow:0 0 0 0 transparent}}
+@media(max-width:1000px){nav.main,.status{display:none}}
+@media(max-width:420px){.logo small{display:none}}
+
+/* ── buttons ────────────────────────────────────────────────────── */
+.btn{display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;font:inherit;font-weight:700;font-size:.95rem;padding:.82rem 1.3rem;border-radius:99px;border:1px solid var(--kum);background:var(--kum);color:var(--on-kum);cursor:pointer;transition:transform .18s cubic-bezier(.2,.8,.3,1),filter .2s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.btn:active{transform:translateY(0)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--hair)}
+.btn.ghost:hover{border-color:var(--kum);color:var(--kum)}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* ── section furniture ──────────────────────────────────────────── */
+section{position:relative;z-index:2;padding:clamp(2.4rem,5.5vw,4.2rem) 0}
+.head{display:grid;grid-template-columns:minmax(0,7.5rem) minmax(0,1fr);gap:clamp(1rem,4vw,3rem);align-items:start;margin-bottom:clamp(2rem,5vw,3.4rem)}
+.head .tag{font-size:.74rem;font-weight:700;letter-spacing:.1em;color:var(--ink);padding-top:.7rem;text-transform:lowercase;display:flex;align-items:center;gap:.5rem}
+.head .tag::before{content:"";width:14px;height:6px;background:var(--ink);flex:none}
+.head h2{font-size:clamp(2.1rem,6.2vw,4.1rem);font-variation-settings:"wdth" 72,"wght" 800;max-width:16ch}
+.head p{color:var(--mute);max-width:56ch;margin:.9rem 0 0;font-size:1.02rem}
+@media(max-width:720px){.head{grid-template-columns:1fr;gap:.5rem}.head .tag{padding-top:0}}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.75,.3,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ── hero ───────────────────────────────────────────────────────── */
+.hero{padding-top:clamp(7.5rem,15vh,10rem);padding-bottom:clamp(3rem,7vw,5rem);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(1.6rem,5vw,4rem);align-items:end}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;align-items:start}}
+.hero h1{font-size:clamp(2.5rem,6.6vw,4.9rem);font-variation-settings:"wdth" 64,"wght" 850;letter-spacing:-.022em;text-wrap:balance;max-width:14ch}
+.hero h1 .num{color:var(--kum);font-variation-settings:"wdth" 72,"wght" 900}
+.hero .lede{color:var(--mute);font-size:clamp(1rem,1.6vw,1.13rem);max-width:46ch;margin:1.3rem 0 0}
+.hero .cta{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.8rem}
+.hero .where{margin-top:1.5rem;font-size:.82rem;color:var(--mute);display:flex;gap:.45rem;align-items:center}
+.hero .where svg{width:14px;height:14px;color:var(--kum)}
+
+/* tally board */
+.tally{background:var(--band);color:var(--band-ink);border-radius:26px;padding:clamp(1.2rem,3vw,2rem);position:relative;overflow:hidden}
+.tally::after{content:"";position:absolute;inset:0;background:radial-gradient(130% 95% at 100% 0%,color-mix(in srgb,var(--band-ink) 12%,transparent),transparent 64%);pointer-events:none}
+.tally-h{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:1.1rem;position:relative;z-index:1}
+.tally-h b{font-family:Anybody;font-variation-settings:"wdth" 70,"wght" 900;font-size:clamp(2.6rem,7vw,3.6rem);line-height:.85;color:var(--band-ink)}
+.tally-h span{font-size:.78rem;color:color-mix(in srgb,var(--band-ink) 62%,transparent);max-width:17ch;text-align:right;line-height:1.35}
+.tally svg{display:block;width:100%;height:auto;position:relative;z-index:1}
+.tally svg path{stroke:color-mix(in srgb,var(--band-ink) 62%,transparent);stroke-width:4.4;stroke-linecap:round;fill:none;cursor:pointer;transition:stroke .2s,stroke-width .2s,filter .2s;pointer-events:stroke}
+.tally svg path:hover,.tally svg path.active{stroke:var(--kum);stroke-width:6;filter:drop-shadow(0 0 6px var(--kum))}
+.tally svg path.x{stroke:var(--band-ink);stroke-width:7}
+.tally svg path.x:hover,.tally svg path.x.active{stroke:var(--kum);stroke-width:9;filter:drop-shadow(0 0 8px var(--kum))}
+.tally svg path.stroke47{stroke:#F3C63F;stroke-width:6.5;animation:strokePulse 1.4s infinite alternate;filter:drop-shadow(0 0 6px #F3C63F)}
+@keyframes strokePulse{from{opacity:0.75;filter:drop-shadow(0 0 2px #F3C63F)}to{opacity:1;filter:drop-shadow(0 0 10px #F3C63F)}}
+.tally-tip{font-size:.75rem;font-weight:700;color:color-mix(in srgb,var(--band-ink) 85%,transparent);background:color-mix(in srgb,var(--band-ink) 10%,transparent);border:1px solid color-mix(in srgb,var(--band-ink) 18%,transparent);border-radius:99px;padding:.25rem .75rem;display:inline-flex;align-items:center;gap:.4rem;margin-top:.7rem;position:relative;z-index:1;transition:all .2s}
+.tally-add-btn{background:transparent;border:1px dashed color-mix(in srgb,var(--band-ink) 35%,transparent);color:var(--band-ink);font:inherit;font-size:.74rem;font-weight:700;border-radius:99px;padding:.22rem .65rem;cursor:pointer;margin-top:.5rem;display:inline-flex;align-items:center;gap:.35rem;transition:all .2s;position:relative;z-index:1}
+.tally-add-btn:hover{background:var(--kum);border-color:var(--kum);color:var(--on-kum)}
+.tally-f{margin-top:1.1rem;font-size:.8rem;color:color-mix(in srgb,var(--band-ink) 66%,transparent);position:relative;z-index:1;display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
+.tally-f i{width:18px;height:2px;background:var(--kum);flex:none}
+
+/* stat strip */
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--hair);margin-top:clamp(2.4rem,6vw,4rem)}
+.strip div{padding:1.15rem .9rem 0;border-right:1px solid var(--hair)}
+.strip div:last-child{border-right:0}
+.strip b{display:block;font-family:Anybody;font-variation-settings:"wdth" 70,"wght" 900;font-size:clamp(1.5rem,3.4vw,2.2rem);line-height:1}
+.strip span{font-size:.78rem;color:var(--mute);display:block;margin-top:.25rem}
+@media(max-width:620px){.strip{grid-template-columns:1fr 1fr}.strip div:nth-child(2){border-right:0}.strip div:nth-child(-n+2){border-bottom:1px solid var(--hair);padding-bottom:1rem}}
+
+/* ── floor / USP ────────────────────────────────────────────────── */
+.floor{display:grid;grid-template-columns:repeat(auto-fit,minmax(248px,1fr));gap:1px;background:var(--hair);border:1px solid var(--hair);border-radius:22px;overflow:hidden}
+.floor article{background:var(--paper);padding:clamp(1.4rem,3vw,2rem);display:flex;flex-direction:column;gap:.7rem;transition:background .25s}
+.floor article:hover{background:var(--card)}
+.floor .art{height:96px;color:var(--kum)}
+.floor .art svg{height:100%;width:auto}
+.floor h3{font-size:1.28rem;font-variation-settings:"wdth" 84,"wght" 800}
+.floor p{color:var(--mute);font-size:.94rem;margin:0}
+.floor .art .steam{stroke-dasharray:4 7;animation:steam 3.4s linear infinite}
+.floor .art .steam.s2{animation-delay:-1.1s}
+.floor .art .steam.s3{animation-delay:-2.2s}
+@keyframes steam{to{stroke-dashoffset:-22}}
+.floor .first{align-self:flex-start;font-size:.68rem;font-weight:800;letter-spacing:.07em;color:var(--kum);border:1px solid var(--kum);border-radius:99px;padding:.18rem .55rem}
+
+/* ── kit / carousel ─────────────────────────────────────────────── */
+.kit-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin-bottom:1.4rem}
+.search{position:relative;flex:1 1 230px;max-width:320px}
+.search svg{position:absolute;left:.85rem;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--mute);pointer-events:none}
+.search input{width:100%;font:inherit;font-size:.9rem;padding:.65rem .9rem .65rem 2.4rem;border-radius:99px;border:1px solid var(--hair);background:transparent;color:var(--ink)}
+.search input::placeholder{color:var(--mute)}
+.search input:focus{border-color:var(--kum);outline:none}
+.filters{display:flex;gap:.4rem;overflow-x:auto;padding-bottom:.2rem;scrollbar-width:none;flex:1 1 100%}
+.filters::-webkit-scrollbar{display:none}
+.filters button{white-space:nowrap;font:inherit;font-size:.82rem;font-weight:600;padding:.42rem .82rem;border-radius:99px;border:1px solid var(--hair);background:transparent;color:var(--mute);cursor:pointer;transition:.2s}
+.filters button:hover{color:var(--ink);border-color:var(--ink)}
+.filters button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.kit-meta{margin-left:auto;font-size:.82rem;color:var(--mute);flex:none}
+.kit-carousel-wrap{position:relative}
+.arrow{width:44px;height:44px;border-radius:50%;border:1px solid color-mix(in srgb,var(--hair) 50%,transparent);background:color-mix(in srgb,var(--card) 60%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--ink);display:grid;place-items:center;cursor:pointer;transition:all .25s cubic-bezier(.2,.8,.3,1);position:absolute;top:50%;transform:translateY(-50%);z-index:10;box-shadow:0 6px 20px #00000045;opacity:.82}
+.arrow:hover:not(:disabled){background:var(--kum);border-color:var(--kum);color:var(--on-kum);opacity:1;transform:translateY(-50%) scale(1.08)}
+.arrow:disabled{opacity:0!important;pointer-events:none;cursor:default}
+.arrow svg{width:18px;height:18px}
+.arrow.prev{left:-14px}
+.arrow.next{right:-14px}
+@media(max-width:640px){.arrow.prev{left:2px}.arrow.next{right:2px}}
+.track{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;padding:.4rem .2rem 1.2rem;scrollbar-width:none;cursor:grab;scroll-padding-left:.2rem}
+.track::-webkit-scrollbar{display:none}
+.track.drag{cursor:grabbing;scroll-snap-type:none}
+.track.drag *{pointer-events:none}
+.card{flex:0 0 clamp(205px,23vw,250px);scroll-snap-align:start;border:1px solid var(--hair);border-radius:20px;overflow:hidden;background:var(--card);display:flex;flex-direction:column;transition:border-color .25s,transform .25s}
+.card:hover{border-color:var(--kum);transform:translateY(-3px)}
+.card .pic{aspect-ratio:4/3;display:grid;place-items:center;background:
+   linear-gradient(140deg,color-mix(in srgb,var(--h) 22%,transparent),transparent 70%),var(--card);
+   border-bottom:1px solid var(--hair-2);position:relative;overflow:hidden}
+.card .pic::after{content:"";position:absolute;inset:0;background-image:radial-gradient(var(--hair) 1px,transparent 1px);background-size:13px 13px;opacity:.35;pointer-events:none}
+.card .pic img{width:100%;height:100%;object-fit:contain;padding:.4rem;position:relative;z-index:2;transition:transform .3s cubic-bezier(.2,.8,.3,1)}
+.card:hover .pic img{transform:scale(1.08)}
+.card .pic svg{width:58%;height:58%;color:var(--h);position:relative;z-index:1}
+.card .body{padding:.85rem .95rem 1rem}
+.card h4{margin:0;font-family:Anybody;font-variation-settings:"wdth" 88,"wght" 700;font-size:1rem;line-height:1.15}
+.card p{margin:.35rem 0 0;font-size:.79rem;color:var(--mute);line-height:1.42}
+.card .cat{margin-top:.6rem;font-size:.68rem;font-weight:700;color:var(--mute);letter-spacing:.04em;display:flex;align-items:center;gap:.4rem}
+.card .cat::before{content:"";width:10px;height:10px;border-radius:2px;background:var(--h);flex:none}
+.empty{padding:2.4rem 0;color:var(--mute);font-size:.94rem}
+.empty b{color:var(--ink);font-family:Anybody;font-variation-settings:"wdth" 82,"wght" 800;display:block;font-size:1.3rem;margin-bottom:.3rem}
+
+/* ── coach ──────────────────────────────────────────────────────── */
+.coach{background:var(--band);color:var(--band-ink)}
+.coach .head .tag{color:var(--kum)}
+.coach .head h2,.coach h3{color:var(--band-ink)}
+.coach .head p{color:color-mix(in srgb,var(--band-ink) 68%,transparent)}
+.coach-grid{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:clamp(1.8rem,5vw,3.6rem);align-items:center}
+@media(max-width:760px){.coach-grid{grid-template-columns:1fr}}
+.portrait{position:relative;aspect-ratio:1;max-width:300px;margin:0 auto}
+.portrait .frame{position:absolute;inset:16px;border-radius:50%;overflow:hidden;border:2px solid color-mix(in srgb,var(--band-ink) 28%,transparent);background:color-mix(in srgb,var(--band-ink) 7%,transparent);display:grid;place-items:center;z-index:2;box-shadow:0 8px 24px #00000050}
+.portrait .frame img{width:100%;height:100%;object-fit:cover;display:none}
+.portrait .frame img[src]:not([src=""]){display:block}
+.portrait .ph{width:72%;color:color-mix(in srgb,var(--band-ink) 40%,transparent)}
+.portrait .note{position:absolute;bottom:-.4rem;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:.66rem;letter-spacing:.06em;background:var(--band-ink);color:var(--band);padding:.25rem .75rem;border-radius:99px;font-weight:800;z-index:3;box-shadow:0 4px 12px #00000030}
+.ring{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none;z-index:1;animation:spin 38s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.ring text{font-family:Anybody,"Schibsted Grotesk",sans-serif;font-size:6.2px;font-weight:800;letter-spacing:.28em;fill:color-mix(in srgb,var(--band-ink) 92%,transparent);text-transform:uppercase}
+.coach blockquote{margin:0 0 1.3rem;font-family:Anybody;font-variation-settings:"wdth" 82,"wght" 700;font-size:clamp(1.3rem,3vw,1.9rem);line-height:1.15;color:var(--band-ink)}
+.coach .who{color:color-mix(in srgb,var(--band-ink) 70%,transparent);font-size:.95rem;max-width:54ch}
+.coach .cta{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.6rem}
+.coach .btn.ghost{color:var(--band-ink);border-color:color-mix(in srgb,var(--band-ink) 28%,transparent)}
+.coach .btn.ghost:hover{border-color:var(--kum);color:var(--kum)}
+
+/* ── plans ──────────────────────────────────────────────────────── */
+.plans{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+@media(max-width:940px){.plans{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.plans{grid-template-columns:1fr}}
+.plan{border:1px solid var(--hair);border-radius:22px;padding:1.5rem 1.35rem;display:flex;flex-direction:column;gap:.35rem;position:relative;background:var(--card);transition:transform .3s cubic-bezier(.2,.8,.3,1),border-color .3s}
+.plan:hover{transform:translateY(-4px);border-color:var(--kum)}
+.plan .dur{font-size:.82rem;font-weight:700;color:var(--mute)}
+.plan .amt{font-family:Anybody;font-variation-settings:"wdth" 68,"wght" 900;font-size:clamp(2.4rem,5.6vw,3.2rem);line-height:.9;margin:.35rem 0 .1rem}
+.plan .per{font-size:.8rem;color:var(--mute)}
+.plan .blurb{margin:.9rem 0 0;font-size:.86rem;color:var(--mute);min-height:2.6em}
+.plan .save{margin-top:.7rem;align-self:flex-start;font-size:.7rem;font-weight:700;color:var(--ink);border:1px solid var(--hair);border-radius:99px;padding:.18rem .55rem;background:var(--kum-soft)}
+.plan .go{margin-top:auto;padding-top:1.2rem}
+.plan .go button{font:inherit;font-size:.88rem;font-weight:700;background:none;border:0;padding:0;cursor:pointer;color:var(--ink);border-bottom:2px solid var(--ink);transition:.2s}
+.plan .go button:hover{opacity:.62}
+.plan.best{border-color:transparent;background:
+  linear-gradient(var(--card),var(--card)) padding-box,
+  conic-gradient(from var(--a,0deg),var(--hair) 0 72%,var(--kum) 82%,var(--hair) 92%) border-box;
+  border:1.5px solid transparent;animation:beam 5.5s linear infinite}
+@property --a{syntax:'<angle>';inherits:false;initial-value:0deg}
+@keyframes beam{to{--a:360deg}}
+.plan .flag{position:absolute;top:-.7rem;left:1.2rem;background:var(--kum);color:var(--on-kum);font-size:.66rem;font-weight:800;letter-spacing:.05em;padding:.2rem .6rem;border-radius:99px}
+.fineprint{margin-top:1.4rem;font-size:.84rem;color:var(--mute);max-width:64ch}
+
+/* ── visit ──────────────────────────────────────────────────────── */
+.visit-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(1.6rem,4vw,3rem)}
+@media(max-width:860px){.visit-grid{grid-template-columns:1fr}}
+.hours{list-style:none;padding:0;margin:0 0 1.6rem;border-top:1px solid var(--hair)}
+.hours li{display:flex;justify-content:space-between;gap:1rem;padding:.72rem 0;border-bottom:1px solid var(--hair);font-size:.95rem}
+.hours li b{font-weight:700}
+.hours li.now{color:var(--ink);font-weight:700}
+.hours li.now span::before{content:"";display:inline-block;width:14px;height:6px;background:var(--ink);margin-right:.5rem;vertical-align:.12em}
+.map{display:block;border:1px solid var(--hair);border-radius:20px;overflow:hidden;text-decoration:none;color:inherit;background:var(--card);transition:border-color .25s}
+.map:hover{border-color:var(--kum)}
+.map .canvas{aspect-ratio:16/9;position:relative;background:var(--card)}
+.map .canvas svg{position:absolute;inset:0;width:100%;height:100%}
+.map .lbl{display:flex;align-items:center;gap:.6rem;padding:.9rem 1rem;font-size:.9rem;font-weight:600;border-top:1px solid var(--hair-2)}
+.map .lbl svg{width:17px;height:17px;color:var(--kum);flex:none}
+.map .lbl span{margin-left:auto;color:var(--mute);font-weight:500;font-size:.82rem}
+[hidden]{display:none!important}
+form{display:grid;gap:.85rem}
+.field label{display:block;font-size:.8rem;font-weight:700;margin-bottom:.32rem}
+.field input,.field select,.field textarea{width:100%;font:inherit;font-size:.93rem;padding:.7rem .85rem;border-radius:13px;border:1px solid var(--hair);background:transparent;color:var(--ink)}
+.field select option{background:var(--card);color:var(--ink)}
+.field textarea{resize:vertical;min-height:84px}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--kum);outline:none}
+.field .err{display:none;color:var(--kum);font-size:.78rem;margin-top:.3rem;font-weight:600}
+.field.bad input,.field.bad select{border-color:var(--kum)}
+.field.bad .err{display:block}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:.85rem}
+@media(max-width:480px){.two{grid-template-columns:1fr}}
+.formnote{font-size:.78rem;color:var(--mute);margin:0}
+.sendbox .cap{font-size:.86rem;font-weight:700;margin:0 0 .7rem}
+.sendbox pre{margin:0;white-space:pre-wrap;word-break:break-word;font:inherit;font-size:.9rem;line-height:1.5;background:var(--card);border:1px solid var(--hair);border-left:4px solid var(--ink);border-radius:14px;padding:1rem 1.1rem;color:var(--ink)}
+.sendrow{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.9rem}
+.sendrow .btn{padding:.62rem 1.05rem;font-size:.88rem}
+
+/* ── footer, dock, misc ─────────────────────────────────────────── */
+footer{background:var(--band);color:var(--band-ink);padding:clamp(2.2rem,4.5vw,3.2rem) 0 clamp(4.8rem,9vh,6.5rem);position:relative;z-index:2}
+.fgrid{display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between;align-items:flex-start}
+footer .logo{color:var(--band-ink)}
+footer .logo small{color:color-mix(in srgb,var(--band-ink) 58%,transparent)}
+.flinks{display:flex;flex-wrap:wrap;gap:1.2rem;font-size:.88rem}
+.flinks a,.flinks button{color:color-mix(in srgb,var(--band-ink) 72%,transparent);text-decoration:none;background:none;border:0;font:inherit;font-size:.88rem;cursor:pointer;padding:0}
+.flinks a:hover,.flinks button:hover{color:var(--kum)}
+.fbase{margin-top:2.4rem;padding-top:1.4rem;padding-inline:clamp(1rem,6vw,5.5rem);border-top:1px solid color-mix(in srgb,var(--band-ink) 16%,transparent);display:flex;flex-wrap:wrap;gap:.8rem;justify-content:space-between;font-size:.78rem;color:color-mix(in srgb,var(--band-ink) 55%,transparent)}
+.dock{position:fixed;left:50%;transform:translateX(-50%);bottom:max(.7rem,env(safe-area-inset-bottom));z-index:58;display:none;gap:.15rem;background:color-mix(in srgb,var(--band) 92%,transparent);backdrop-filter:blur(12px);border:1px solid color-mix(in srgb,var(--band-ink) 16%,transparent);border-radius:99px;padding:.32rem}
+.dock a{display:flex;flex-direction:column;align-items:center;gap:.14rem;text-decoration:none;color:color-mix(in srgb,var(--band-ink) 72%,transparent);font-size:.62rem;font-weight:700;padding:.42rem .72rem;border-radius:99px}
+.dock a svg{width:17px;height:17px}
+.dock a.wa{background:var(--kum);color:var(--on-kum)}
+@media(max-width:1000px){.dock{display:flex}}
+.top{position:fixed;left:24px;bottom:calc(24px + env(safe-area-inset-bottom));z-index:85;display:inline-flex;align-items:center;gap:.4rem;padding:.55rem .9rem;border-radius:99px;border:1px solid color-mix(in srgb,var(--hair) 65%,transparent);background:color-mix(in srgb,var(--card) 68%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--ink);font:inherit;font-size:.78rem;font-weight:800;cursor:pointer;opacity:0;pointer-events:none;transform:translateY(12px);transition:all .3s cubic-bezier(.2,.8,.3,1);box-shadow:0 8px 24px #00000040}
+.top.on{opacity:.85;pointer-events:auto;transform:none}
+.top:hover{opacity:1;background:var(--kum);border-color:var(--kum);color:var(--on-kum);transform:translateY(-2px);box-shadow:0 10px 30px #00000060}
+.top svg{width:15px;height:15px;flex:none}
+@media(max-width:1000px){.top{bottom:calc(5rem + env(safe-area-inset-bottom));left:16px}}
+dialog{border:1px solid var(--hair);border-radius:22px;background:var(--paper);color:var(--ink);padding:0;max-width:min(620px,92vw);width:100%}
+dialog::backdrop{background:#02100880;backdrop-filter:blur(3px)}
+.dlg{padding:clamp(1.4rem,4vw,2.2rem);max-height:76vh;overflow:auto}
+.dlg h3{font-size:1.6rem;margin-bottom:.8rem;font-variation-settings:"wdth" 80,"wght" 800}
+.dlg h4{font-family:"Schibsted Grotesk";font-size:.9rem;font-weight:800;margin:1.3rem 0 .3rem}
+.dlg p,.dlg li{font-size:.9rem;color:var(--mute)}
+.dlg ul{padding-left:1.1rem;margin:0}
+.dlg .x{float:right;margin:-.3rem -.3rem 0 0}
+.consent{position:fixed;left:1rem;right:1rem;bottom:1rem;z-index:59;max-width:430px;background:var(--card);border:1px solid var(--hair);border-radius:20px;padding:1.1rem 1.2rem;box-shadow:0 18px 50px #0209061f;display:none}
+.consent.on{display:block;animation:cin .5s cubic-bezier(.2,.8,.3,1)}
+@keyframes cin{from{opacity:0;transform:translateY(14px)}}
+.consent p{font-size:.85rem;color:var(--mute);margin:0 0 .9rem}
+.consent b{color:var(--ink);font-weight:700}
+.consent .row{display:flex;gap:.5rem;flex-wrap:wrap}
+.consent .btn{padding:.55rem 1rem;font-size:.85rem}
+@media(min-width:1001px){.consent{max-width:none;display:none;align-items:center;gap:1.4rem;padding:.9rem 1.2rem;border-radius:18px}
+.consent.on{display:flex}
+.consent p{margin:0;flex:1}
+.consent .row{flex:none}}
+@media(max-width:1000px){.consent{bottom:4.6rem}}
+
+/* ── dark-band contexts: accent flips to the band's own ink ───── */
+.tally-f i{background:var(--band-ink)}
+.coach .head .tag{color:var(--band-ink)}
+.coach .head .tag::before{background:var(--band-ink)}
+.coach .btn{background:var(--band-ink);border-color:var(--band-ink);color:var(--band)}
+.coach .btn.ghost{background:transparent;color:var(--band-ink)}
+.coach .btn.ghost:hover{border-color:var(--band-ink);color:var(--band-ink)}
+.portrait .note{background:var(--band-ink);color:var(--band)}
+.flinks a:hover,.flinks button:hover{color:var(--band-ink);text-decoration:underline;text-underline-offset:3px}
+.dock a.wa{background:var(--band-ink);color:var(--band)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ── dumbbell hover animation & easter egg ───────────────────────── */
+.logo:hover svg{animation:dbRep .5s ease-in-out infinite alternate;color:#F3C63F}
+@keyframes dbRep{from{transform:translateY(0) rotate(0deg)}to{transform:translateY(-5px) rotate(-12deg)}}
+.easter-toast{position:fixed;top:4.8rem;right:1.2rem;z-index:99;background:var(--card);border:1.5px solid #F3C63F;border-radius:18px;padding:.9rem 1.1rem;box-shadow:0 12px 36px #00000060;display:none;max-width:320px;animation:cin .4s cubic-bezier(.2,.8,.3,1)}
+.easter-toast.on{display:block}
+.easter-toast .badge{font-size:.68rem;font-weight:800;letter-spacing:.06em;color:#000;background:#F3C63F;padding:.18rem .55rem;border-radius:99px;display:inline-block;margin-bottom:.35rem}
+.easter-toast p{font-size:.84rem;margin:0 0 .6rem;color:var(--ink);line-height:1.35}
+.easter-toast button{width:100%;font:inherit;font-size:.8rem;font-weight:800;background:#F3C63F;color:#000;border:0;border-radius:99px;padding:.45rem .8rem;cursor:pointer;transition:.2s}
+.easter-toast button:hover{filter:brightness(1.1);transform:scale(1.02)}
+
+/* ── kit carousel floating left & right translucent arrows ───────── */
+.kit-carousel-wrap{position:relative;margin-top:.6rem}
+.kit-carousel-wrap .arrow{width:48px;height:48px;border-radius:50%;border:1.5px solid color-mix(in srgb,var(--hair) 60%,transparent);background:color-mix(in srgb,var(--card) 75%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--ink);display:grid;place-items:center;cursor:pointer;transition:all .25s cubic-bezier(.2,.8,.3,1);position:absolute;top:50%;transform:translateY(-50%);z-index:20;box-shadow:0 8px 24px #00000060;opacity:.88}
+.kit-carousel-wrap .arrow:hover:not(:disabled){background:var(--kum);border-color:var(--kum);color:var(--on-kum);opacity:1;transform:translateY(-50%) scale(1.12);box-shadow:0 10px 30px #00000080}
+.kit-carousel-wrap .arrow:disabled{opacity:0!important;pointer-events:none;cursor:default}
+.kit-carousel-wrap .arrow svg{width:18px;height:18px}
+.kit-carousel-wrap .arrow.prev{left:-20px}
+.kit-carousel-wrap .arrow.next{right:-20px}
+@media(max-width:768px){.kit-carousel-wrap .arrow.prev{left:2px}.kit-carousel-wrap .arrow.next{right:2px}}
+
+/* ── simulated live chat UI widget ──────────────────────────────── */
+.chat-sim{background:var(--card);border:1px solid var(--hair);border-radius:20px;overflow:hidden;margin-top:1rem;box-shadow:0 8px 30px #00000030}
+.chat-sim-head{background:color-mix(in srgb,var(--band) 80%,#0f281b);padding:.8rem 1rem;display:flex;align-items:center;gap:.75rem;border-bottom:1px solid var(--hair-2)}
+.chat-sim-head img{width:40px;height:40px;border-radius:50%;object-fit:cover;border:1.5px solid var(--kum)}
+.chat-sim-head b{display:block;font-size:.9rem;color:var(--band-ink);line-height:1.2}
+.chat-sim-head span{font-size:.72rem;color:#4ade80;display:flex;align-items:center;gap:.3rem;font-weight:600}
+.chat-sim-head span::before{content:"";width:6px;height:6px;border-radius:50%;background:#4ade80}
+.chat-sim-body{padding:1rem;display:flex;flex-direction:column;gap:.8rem;background:color-mix(in srgb,var(--paper) 95%,#000);max-height:240px;overflow-y:auto}
+.chat-bubble{max-width:82%;padding:.7rem .9rem;border-radius:16px;font-size:.88rem;line-height:1.4}
+.chat-bubble.in{background:color-mix(in srgb,var(--card) 90%,#1e3a2b);color:var(--ink);align-self:flex-start;border-bottom-left-radius:4px;border:1px solid var(--hair-2)}
+.chat-bubble.out{background:#005c4b;color:#ffffff;align-self:flex-end;border-bottom-right-radius:4px}
+.chat-sim-foot{padding:.75rem;background:var(--card);border-top:1px solid var(--hair-2);display:flex;gap:.5rem;align-items:center}
+.chat-sim-foot input{flex:1;font:inherit;font-size:.88rem;padding:.65rem .95rem;border-radius:99px;border:1px solid var(--hair);background:transparent;color:var(--ink)}
+.chat-sim-foot input:focus{border-color:var(--kum);outline:none}
+.chat-sim-foot button{font:inherit;font-size:.85rem;font-weight:700;padding:.65rem 1.1rem;border-radius:99px;border:0;background:#25D366;color:#000;cursor:pointer;display:inline-flex;align-items:center;gap:.4rem;transition:.2s;flex:none}
+.chat-sim-foot button:hover{filter:brightness(1.1);transform:translateY(-1px)}
+
+
+/* ── animated logo ───────────────────────────────────────────────── */
+.logo svg{width:28px;height:28px;color:var(--kum);transition:transform .3s,color .3s;animation:logoFloat 3.2s ease-in-out infinite alternate}
+.logo:hover svg{animation:logoRep .5s cubic-bezier(.3,.8,.4,1) infinite alternate;color:#F3C63F;filter:drop-shadow(0 0 8px #F3C63F90)}
+@keyframes logoFloat{from{transform:translateY(0)}to{transform:translateY(-3px)}}
+@keyframes logoRep{from{transform:translateY(0) rotate(0deg) scale(1)}to{transform:translateY(-5px) rotate(-14deg) scale(1.12)}}
+
+/* ── scroll reveal staggered animations ──────────────────────────── */
+.reveal{opacity:0;transform:translateY(28px) scale(0.98);transition:opacity .75s cubic-bezier(.2,.8,.3,1),transform .75s cubic-bezier(.2,.8,.3,1)}
+.reveal.in{opacity:1;transform:none}
+.card,.plan,.floor article{transition:border-color .25s,transform .25s,background .25s}
+
+/* ── equipment card image full visibility ────────────────────────── */
+.card .pic{aspect-ratio:4/3;display:grid;place-items:center;background:
+   linear-gradient(140deg,color-mix(in srgb,var(--h) 18%,transparent),transparent 75%),var(--card);
+   border-bottom:1px solid var(--hair-2);position:relative;overflow:hidden;padding:.4rem}
+.card .pic img{width:100%;height:100%;max-height:100%;object-fit:contain;padding:.2rem;position:relative;z-index:2;transition:transform .35s cubic-bezier(.2,.8,.3,1),filter .35s ease}
+.card:hover .pic img{transform:scale(1.09) translateY(-2px);filter:drop-shadow(0 6px 12px rgba(0,0,0,0.45))}
+
+
+/* ── header logo & hero branding size adjustments ─────────────────── */
+.logo{gap:.7rem;font-size:1.6rem}
+.logo svg{width:36px;height:36px;color:var(--kum)}
+.logo small{font-size:.65rem;letter-spacing:.16em;margin-top:2px}
+.hero-brand{font-size:clamp(2.6rem,7.5vw,5.5rem);font-variation-settings:"wdth" 60,"wght" 950;letter-spacing:-.03em;color:var(--kum);margin-bottom:.4rem;line-height:.88}
+.hero-sub{font-size:clamp(1.1rem,2.2vw,1.5rem);font-weight:700;color:var(--ink);margin-bottom:1rem}
+
+/* ── compact tally box ───────────────────────────────────────────── */
+.compact-tally{max-width:340px;margin:0 0 0 auto;padding:1.1rem 1.25rem 1.2rem;border-radius:22px}
+.compact-tally .tally-h b{font-size:2.4rem;line-height:.85}
+.compact-tally .tally-h span{font-size:.74rem}
+@media(max-width:900px){.compact-tally{max-width:100%;margin-top:1.2rem}}
+
+/* ── easter egg toast with timer & x button ──────────────────────── */
+.easter-toast{position:fixed;bottom:24px;left:24px;z-index:9999;background:var(--band);color:var(--band-ink);border:1.5px solid #F3C63F;border-radius:18px;padding:1.1rem 1.3rem 1.4rem;max-width:340px;box-shadow:0 12px 36px #00000080;display:none;flex-direction:column;gap:.5rem;animation:toastIn .35s cubic-bezier(.2,.8,.3,1)}
+.easter-toast.on{display:flex}
+@keyframes toastIn{from{opacity:0;transform:translateY(20px) scale(.95)}to{opacity:1;transform:none}}
+.easter-toast .toast-x{position:absolute;top:8px;right:10px;background:none;border:none;color:var(--mute);font-size:1.5rem;line-height:1;cursor:pointer;padding:4px;border-radius:50%;transition:color .2s}
+.easter-toast .toast-x:hover{color:#fff}
+.easter-toast .badge{font-size:.72rem;font-weight:900;letter-spacing:.06em;color:#F3C63F}
+.easter-toast p{margin:0;font-size:.88rem;color:var(--band-ink);line-height:1.35}
+.easter-toast button#claimEggBtn{margin-top:.4rem;background:#F3C63F;color:#000;border:0;padding:.65rem 1rem;border-radius:99px;font-weight:800;font-size:.84rem;cursor:pointer;transition:transform .2s,filter .2s}
+.easter-toast button#claimEggBtn:hover{transform:translateY(-1px);filter:brightness(1.1)}
+.toast-timer{position:absolute;bottom:0;left:0;right:0;height:4px;background:#ffffff20;border-bottom-left-radius:18px;border-bottom-right-radius:18px;overflow:hidden}
+.toast-timer i{display:block;height:100%;width:100%;background:#F3C63F}
+
+/* ── floating action cluster & options chatbot modal ──────────────── */
+.floating-actions{position:fixed;bottom:24px;right:24px;z-index:90;display:flex;flex-direction:column;gap:.6rem;align-items:flex-end}
+.float-btn{width:52px;height:52px;border-radius:50%;border:1px solid var(--hair);background:var(--card);color:var(--ink);display:grid;place-items:center;cursor:pointer;box-shadow:0 8px 24px #00000050;transition:transform .25s cubic-bezier(.2,.8,.3,1),background .25s,border-color .25s;text-decoration:none;position:relative}
+.float-btn:hover{transform:scale(1.12);z-index:2}
+.float-btn.bot-btn{background:var(--kum);color:var(--on-kum);padding:0}
+.float-btn svg{width:22px;height:22px}
+
+@media(max-width:640px){
+  .floating-actions{bottom:80px;right:16px}
+}
+
+#visit{padding-bottom:1.2rem}
+footer{padding:clamp(2.2rem,4.5vw,3.2rem) 0 clamp(4.8rem,9vh,6.5rem)}
+
+.chatbot-win{position:fixed;bottom:76px;right:24px;z-index:9999;width:min(350px,calc(100vw - 32px));max-height:min(440px,78vh);background:var(--card);border:1.5px solid var(--hair);border-radius:22px;overflow:hidden;box-shadow:0 16px 48px #00000085;display:flex;flex-direction:column;animation:botIn .35s cubic-bezier(.2,.8,.3,1)}
+.chatbot-win[hidden]{display:none!important}
+@keyframes botIn{from{opacity:0;transform:translateY(24px) scale(.95)}to{opacity:1;transform:none}}
+.bot-header{background:color-mix(in srgb,var(--band) 88%,#0f281b);padding:.75rem 1rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--hair-2);flex:none}
+.bot-profile{display:flex;align-items:center;gap:.65rem}
+.bot-profile img{width:38px;height:38px;border-radius:50%;object-fit:cover;border:1.5px solid #25D366}
+.bot-profile b{display:block;font-size:.88rem;color:var(--band-ink);line-height:1.2}
+.online-status{font-size:.7rem;color:#4ade80;display:flex;align-items:center;gap:.3rem;font-weight:600;margin-top:1px}
+.online-status i{width:6px;height:6px;border-radius:50%;background:#4ade80;display:inline-block}
+.bot-close{background:none;border:none;color:var(--band-ink);font-size:1.6rem;line-height:1;cursor:pointer;padding:2px;border-radius:50%;transition:opacity .2s;opacity:.8}
+.bot-close:hover{opacity:1}
+
+.bot-messages{padding:.8rem;display:flex;flex-direction:column;gap:.6rem;background:color-mix(in srgb,var(--paper) 96%,#000);overflow-y:auto;flex:1 1 auto;max-height:200px;scroll-behavior:smooth}
+.bot-messages .msg{max-width:88%;padding:.65rem .85rem;border-radius:16px;font-size:.83rem;line-height:1.4}
+.bot-messages .msg p{margin:0 0 .3rem}
+.bot-messages .msg p:last-child{margin:0}
+.bot-messages .bot-msg{background:color-mix(in srgb,var(--card) 92%,#142e20);color:var(--ink);align-self:flex-start;border-bottom-left-radius:4px;border:1px solid var(--hair-2)}
+.bot-messages .user-msg{background:#005c4b;color:#ffffff;align-self:flex-end;border-bottom-right-radius:4px}
+.bot-act-btn{display:inline-flex;align-items:center;gap:.4rem;margin-top:.4rem;font-size:.78rem;font-weight:800;padding:.4rem .75rem;border-radius:99px;background:var(--kum);color:var(--on-kum);text-decoration:none;transition:filter .2s}
+.bot-act-btn.wa-act{background:#25D366;color:#000}
+.bot-act-btn:hover{filter:brightness(1.1)}
+
+.bot-options{padding:.65rem;background:var(--card);border-top:1px solid var(--hair-2);display:flex;flex-direction:column;gap:.35rem;flex:none}
+.opt-btn{font:inherit;font-size:.8rem;font-weight:700;padding:.55rem .8rem;border-radius:10px;border:1px solid var(--hair);background:transparent;color:var(--ink);cursor:pointer;text-align:left;transition:all .2s;display:flex;align-items:center;gap:.45rem}
+.opt-btn:hover{background:var(--kum-soft);border-color:var(--kum);color:var(--kum);transform:translateX(3px)}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main" data-en="Skip to content" data-ta="Content-ku ponga">Skip to content</a>
+<div class="rail"><i id="railFill"></i></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<g id="s" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"></g>
+<symbol id="g-tread" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M5 38h30l6-22"/><path d="M8 38l4-14h22"/><path d="M41 16h-6"/><path d="M14 32h16M17 27h14"/><circle cx="41" cy="12" r="3"/></symbol>
+<symbol id="g-stairs" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M6 40h9v-8h9v-8h9v-8h9"/><path d="M15 32V14M24 24V10"/><path d="M6 40V26"/></symbol>
+<symbol id="g-bike" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="34" r="7"/><path d="M12 34l9-16h8"/><path d="M29 10v12M24 22h12"/><path d="M36 22v12h-8"/><circle cx="21" cy="18" r="2.4"/></symbol>
+<symbol id="g-cable" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M10 6v36M38 6v36"/><path d="M10 10h28"/><path d="M24 10v10"/><rect x="18" y="20" width="12" height="5" rx="1.6"/><rect x="18" y="27" width="12" height="5" rx="1.6"/><path d="M6 42h36"/></symbol>
+<symbol id="g-machine" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M7 41L20 12"/><path d="M20 12h16"/><rect x="30" y="6" width="5" height="13" rx="1.6"/><rect x="37" y="6" width="5" height="13" rx="1.6"/><path d="M7 41h22"/><path d="M14 27h11"/></symbol>
+<symbol id="g-rack" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M9 42V8M39 42V8"/><path d="M9 8h30"/><path d="M9 20h8M39 20h-8"/><path d="M9 30h30"/><path d="M4 42h40"/></symbol>
+<symbol id="g-bench" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="20" width="36" height="6" rx="3"/><path d="M12 26v14M36 26v14"/><path d="M8 40h8M32 40h8"/><path d="M6 20l6-6"/></symbol>
+<symbol id="g-db" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M16 24h16"/><rect x="8" y="16" width="7" height="16" rx="2.4"/><rect x="33" y="16" width="7" height="16" rx="2.4"/><path d="M4 20v8M44 20v8"/></symbol>
+<symbol id="g-bar" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M14 24h20"/><path d="M11 14v20M38 14v20M7 19v10M42 19v10"/><path d="M2 24h3M43 24h3"/></symbol>
+<symbol id="g-kb" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M17 18c0-7 3-11 7-11s7 4 7 11"/><path d="M18 18h12c6 3 9 9 9 15a8 8 0 01-8 8H17a8 8 0 01-8-8c0-6 3-12 9-15z"/></symbol>
+<symbol id="g-ball" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="17"/><path d="M24 7c6 5 6 29 0 34M24 7c-6 5-6 29 0 34M7 24h34"/></symbol>
+<symbol id="g-mat" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M14 12h24a7 7 0 010 24H14"/><ellipse cx="14" cy="24" rx="7" ry="12"/><path d="M19 18h17M19 30h17"/></symbol>
+<symbol id="g-rope" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M8 40c0-10 6-14 12-14s12 4 12-6c0-6-4-9-8-9"/><circle cx="8" cy="42" r="3"/><circle cx="23" cy="9" r="3"/><path d="M14 33c4-3 9-3 13-6"/></symbol>
+<symbol id="g-wheel" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="28" r="12"/><circle cx="24" cy="28" r="3.4"/><path d="M6 28h6M36 28h6"/><path d="M9 25v6M39 25v6"/></symbol>
+<symbol id="g-strap" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8v16a11 11 0 0022 0V8"/><path d="M9 8h8M31 8h8"/><path d="M18 26h12"/><path d="M24 35v7"/><path d="M19 42h10"/></symbol>
+<symbol id="g-core" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="14" width="34" height="20" rx="4"/><path d="M24 14v20M7 24h34"/><path d="M15 19v2M33 27v2"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></symbol>
+<symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 019.5 4a8.5 8.5 0 1010.5 10.5z"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+<symbol id="i-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5l-7 7 7 7"/></symbol>
+<symbol id="i-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 5l7 7-7 7"/></symbol>
+<symbol id="i-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6M6 12l6-6 6 6"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 006.5 6.5L17 13l4 1.5v3a2.5 2.5 0 01-2.8 2.5A17.5 17.5 0 013.5 5.8 2.5 2.5 0 016 3z"/></symbol>
+<symbol id="i-wa" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.9.53 3.68 1.45 5.2L2 22l5.1-1.6a9.8 9.8 0 004.94 1.3c5.44 0 9.84-4.4 9.84-9.84S17.48 2 12.04 2zm0 17.7c-1.58 0-3.05-.46-4.29-1.26l-.31-.19-3.03.95.96-2.95-.2-.32a7.9 7.9 0 01-1.2-4.19c0-4.35 3.55-7.9 7.9-7.9s7.9 3.55 7.9 7.9-3.55 7.96-7.73 7.96zm4.32-5.9c-.24-.12-1.4-.69-1.61-.77-.22-.08-.38-.12-.54.12s-.62.77-.76.93c-.14.16-.28.18-.52.06a6.46 6.46 0 01-1.9-1.17 7.15 7.15 0 01-1.32-1.64c-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.19-.46-.39-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.1.16 1.52.1.46-.07 1.4-.57 1.6-1.13.2-.55.2-1.03.14-1.13-.06-.1-.22-.16-.46-.28z"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></symbol>
+<symbol id="i-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4a1 1 0 011-1h8l9 9-9 9-9-9z"/><circle cx="7.5" cy="7.5" r="1.4"/></symbol>
+</defs></svg>
+
+
+<div class="easter-toast" id="easterToast" role="alert" aria-live="polite">
+ <button type="button" class="toast-x" id="closeEggBtn" aria-label="Close notification">&times;</button>
+ <span class="badge">🎉 EASTER EGG UNLOCKED!</span>
+ <p id="easterText">You found the secret dumbbell code! Get <b>₹100 OFF</b> your membership.</p>
+ <button type="button" id="claimEggBtn">Claim ₹100 Discount on WhatsApp ↗</button>
+ <div class="toast-timer"><i id="toastTimerBar"></i></div>
+</div>
+
+<header id="hdr">
+ <div class="wrap bar">
+  <a class="logo" href="#top">
+   <svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M16 24h16"/><path d="M12 14v20M36 14v20M6 19v10M42 19v10"/></svg>
+   <span>TGM<small data-en="Moments that shape you" data-ta="Moments That Shape You">Moments that shape you</small></span>
+  </a>
+  <nav class="main" aria-label="Sections">
+   <a href="#floor" data-en="Floor" data-ta="Lifting Floor">Floor</a>
+   <a href="#kit" data-en="Kit" data-ta="71 Machines">Kit</a>
+   <a href="#coach" data-en="Coach" data-ta="Coach Dinesh">Coach</a>
+   <a href="#plans" data-en="Plans" data-ta="Membership Plans">Plans</a>
+   <a href="#visit" data-en="Visit" data-ta="Vandhu Paaru">Visit</a>
+  </nav>
+  <div class="tools">
+   <span class="status" id="status"><i></i><em id="statusText" style="font-style:normal">—</em></span>
+   <button class="chip lang" id="langBtn" aria-label="Switch language / Mozhi maathunga"><b data-on>EN</b><b>TA</b></button>
+   <button class="chip" id="themeBtn" aria-label="Switch to light mode"><svg aria-hidden="true"><use href="#i-sun"/></svg></button>
+  </div>
+ </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+ <div class="wrap hero-grid">
+  <div>
+   <h1 class="hero-brand">THE GYM MOMENTS</h1>
+   <p class="hero-sub"><span class="num" id="heroCount">46</span> <span data-en="members train here right now. There's room for you." data-ta="members inga thookuraanga. Unakkum idam iruku bossuh!">members train here right now. There's room for you.</span></p>
+   <p class="lede" data-en="The Gym Moments, Coimbatore. 71 machines, full AC, an open-air terrace, and a kitchen where you cook your own post-workout meal." data-ta="The Gym Moments, Coimbatore. 71 Infinity Fit machines, Full AC, open terrace, appuram workout mudinjadhum mutta vechu samaikkira Live Kitchen pappa!">The Gym Moments, Coimbatore. 71 machines, full AC, an open-air terrace, and a kitchen where you cook your own post-workout meal.</p>
+   <div class="cta">
+    <a class="btn" id="heroWa" href="https://api.whatsapp.com/send?phone=919500441505&text=Hi%20Dinesh,%20can%20I%20talk%20about%20joining%20TGM?" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span data-en="WhatsApp Chat" data-ta="WhatsApp Chat">WhatsApp Chat</span></a>
+     <a class="btn ghost" href="tel:+919500441505"><svg aria-hidden="true"><use href="#i-phone"/></svg><span data-en="Call" data-ta="Call">Call</span></a>
+   </div>
+   <p class="where"><svg aria-hidden="true"><use href="#i-pin"/></svg><span data-en="Coimbatore, Tamil Nadu · open seven days" data-ta="Coimbatore, Tamil Nadu · ezhu naalum open-u bossuh">Coimbatore, Tamil Nadu · open seven days</span></p>
+  </div>
+  <div class="tally compact-tally" id="tallyBox">
+   <div class="tally-h">
+    <b id="tallyNum">46</b>
+    <span data-en="active floor members" data-ta="active floor members">active floor members</span>
+   </div>
+   <svg id="tallySvg" viewBox="0 0 300 120" role="img" aria-label="Forty-six tally marks, one per member"></svg>
+   <div class="tally-tip" id="tallyTip" data-en="Hover or tap marks · Tap button to preview yours" data-ta="Mark-a touch pannunga · Unga rep-a preview pannunga">Hover or tap marks · Tap button to preview yours</div>
+   <p class="tally-f"><i></i><span data-en="One mark joins the day you do." data-ta="Neenga join panna anniku unga rep mark thooki nirupom!">One mark joins the day you do.</span> <button type="button" class="tally-add-btn" id="tallyAddBtn" data-en="+ Add mark #47" data-ta="+ Claim Rep #47">+ Claim Rep #47</button></p>
+  </div>
+ </div>
+ <div class="wrap">
+  <div class="strip" id="statStrip">
+   <div><b data-count="71">0</b><span data-en="machines and tools" data-ta="machine-um tool-um">machines and tools</span></div>
+   <div><b data-count="17">0<small style="font-size:.5em">h</small></b><span data-en="open, Monday to Saturday" data-ta="Monday-lendhu Saturday varai">open, Monday to Saturday</span></div>
+   <div><b data-count="1">0</b><span data-en="coach, on the floor himself" data-ta="coach, avare floor-la nikkuraaru">coach, on the floor himself</span></div>
+   <div><b data-count="0">0</b><span data-en="joining fees or hidden charges" data-ta="joining fee illa, maraivaa charge illa">joining fees or hidden charges</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="floor">
+ <div class="wrap">
+  <div class="head reveal">
+   <p class="tag" data-en="the floor" data-ta="floor">the floor</p>
+   <div>
+    <h2 data-en="Four things you won't find in the gym down the road." data-ta="Adutha theru gym-la kidaikkaadha naalu vishayam.">Four things you won't find in the gym down the road.</h2>
+    <p data-en="We built the place we wanted to train in: cool air, quiet reps, sky overhead when you stretch, and real food at the end of it." data-ta="Naanga train panna virumbura maadhiriye katti irukom — AC kaathu, amaidhiyaana reps, stretch pannumbodhu vaanam, mudivula nejamaana saapadu.">We built the place we wanted to train in: cool air, quiet reps, sky overhead when you stretch, and real food at the end of it.</p>
+   </div>
+  </div>
+  <div class="floor">
+   <article>
+    <div class="art"><svg viewBox="0 0 120 96" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M22 58h62a6 6 0 016 6v2a18 18 0 01-18 18H34a18 18 0 01-18-18v-2a6 6 0 016-6z"/>
+      <path d="M90 62h14a8 8 0 010 16h-6"/><path d="M14 84h84"/>
+      <path class="steam" d="M40 46c0-7 7-7 7-14s-7-7-7-14"/><path class="steam s2" d="M58 44c0-7 7-7 7-14s-7-7-7-14"/><path class="steam s3" d="M76 46c0-7 7-7 7-14s-7-7-7-14"/>
+    </svg></div>
+    <span class="first" data-en="first in Coimbatore" data-ta="Coimbatore-la mudhalmurai">first in Coimbatore</span>
+    <h3 data-en="A kitchen you actually cook in" data-ta="Neenga-e samaikkira kitchen">A kitchen you actually cook in</h3>
+    <p data-en="Not a counter selling shakes. A live kitchen with a stove and a sink, so the egg you eat after your set is the one you cracked." data-ta="Shake vikkira counter illa — stove, sink ellaam irukkura live kitchen. Set mudichadhum neenga-e mutta udachi saapdunga.">Not a counter selling shakes. A live kitchen with a stove and a sink, so the egg you eat after your set is the one you cracked.</p>
+   </article>
+   <article>
+    <div class="art"><svg viewBox="0 0 120 96" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <rect x="18" y="16" width="84" height="34" rx="7"/><path d="M28 26h64M28 34h44"/>
+      <path d="M32 58c0 8 8 8 8 16M56 58c0 8 8 8 8 16M80 58c0 8 8 8 8 16"/>
+    </svg></div>
+    <h3 data-en="Full AC, all 17 hours" data-ta="17 mani neramum full AC">Full AC, all 17 hours</h3>
+    <p data-en="Coimbatore heat stays outside. The lifting floor is climate-controlled from the 5am opening to the last rep at 10pm." data-ta="Coimbatore veyil veliye-thaan. Kaalai 5 mudhal iravu 10 varai floor full AC-la irukkum.">Coimbatore heat stays outside. The lifting floor is climate-controlled from the 5am opening to the last rep at 10pm.</p>
+   </article>
+   <article>
+    <div class="art"><svg viewBox="0 0 120 96" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <circle cx="60" cy="34" r="14"/><path d="M60 8v6M60 54v6M34 34h6M80 34h6M42 16l4 4M74 48l4 4M78 16l-4 4M46 48l-4 4"/>
+      <path d="M14 76h92M22 86h76"/><path d="M30 76V64M90 76V64"/>
+    </svg></div>
+    <h3 data-en="An open terrace for the easy part" data-ta="Stretch pannradhukku open terrace">An open terrace for the easy part</h3>
+    <p data-en="Warm-ups, mobility and cool-downs happen upstairs in open air, not on a rubber square between two machines." data-ta="Warm-up, mobility, cool-down ellaam mele open-air-la. Rendu machine naduvula oru rubber mat-la illa.">Warm-ups, mobility and cool-downs happen upstairs in open air, not on a rubber square between two machines.</p>
+   </article>
+   <article>
+    <div class="art"><svg viewBox="0 0 120 96" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M40 38h10l16-14v48L50 58H40a6 6 0 01-6-6V44a6 6 0 016-6z"/>
+      <path d="M80 34c5 6 5 22 0 28"/><path d="M92 26c9 11 9 33 0 44"/><path d="M96 20L20 76" stroke-width="3.4"/>
+    </svg></div>
+    <h3 data-en="No blasting speakers" data-ta="Speaker-la kaduppu paadal illa">No blasting speakers</h3>
+    <p data-en="No one else picks your playlist. Bring headphones, bring your phone if you need it — just don't spend forty minutes on reels and call it a session." data-ta="Unga playlist-a vera yaarum decide pannadhu. Headphone konduvaanga, phone-um use pannunga — aana 40 nimisham reels paathutu 'gym poinen'nu mattum sollaadheenga.">No one else picks your playlist. Bring headphones, bring your phone if you need it — just don't spend forty minutes on reels and call it a session.</p>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section id="kit">
+ <div class="wrap">
+  <div class="head reveal">
+   <p class="tag" data-en="the kit" data-ta="kit">the kit</p>
+   <div>
+    <h2 data-en="Every machine on the floor, listed." data-ta="Floor-la irukkura ellaa machine-um, ingaye.">Every machine on the floor, listed.</h2>
+    <p data-en="Seventy-one pieces of Infinity Fit commercial gear. Search for the one you care about, or drag through the lot." data-ta="71 Infinity Fit commercial machine. Ungalukku thevaiyaanadhu edhunu search pannunga, illana drag pannitte paarunga.">Seventy-one pieces of Infinity Fit commercial gear. Search for the one you care about, or drag through the lot.</p>
+   </div>
+  </div>
+  <div class="kit-controls">
+   <div class="search">
+    <svg aria-hidden="true"><use href="#i-search"/></svg>
+    <input id="q" type="search" autocomplete="off" placeholder="Search leg press, kettlebell…" aria-label="Search equipment" data-en-ph="Search leg press, kettlebell…" data-ta-ph="Leg press, kettlebell-nu search pannunga…">
+   </div>
+   <p class="kit-meta" id="kitMeta" aria-live="polite">71 of 71</p>
+   <div class="filters" id="filters" role="group" aria-label="Filter by category"></div>
+  </div>
+  <div class="kit-carousel-wrap">
+   <button class="arrow prev" id="prev" aria-label="Scroll equipment left"><svg aria-hidden="true"><use href="#i-left"/></svg></button>
+   <div class="track" id="track" tabindex="0" role="group" aria-label="Equipment carousel — use arrow keys to scroll"></div>
+   <button class="arrow next" id="next" aria-label="Scroll equipment right"><svg aria-hidden="true"><use href="#i-right"/></svg></button>
+  </div>
+  <div class="empty" id="empty" hidden>
+   <b data-en="Nothing by that name." data-ta="Andha peru-la onnum illa.">Nothing by that name.</b>
+   <span data-en="Try “bench”, “cable” or clear the search. If we really don't have it, ask Dinesh — he buys what members actually use." data-ta="“bench”, “cable”-nu try pannunga, illana search-a clear pannunga. Nejamaave illana Dinesh kitta kelunga — members use pannradha thaan avar vaanguvaaru.">Try “bench”, “cable” or clear the search.</span>
+  </div>
+ </div>
+</section>
+
+<section class="coach" id="coach">
+ <div class="wrap">
+  <div class="head reveal">
+   <p class="tag" data-en="the coach" data-ta="Coach Dinesh">the coach</p>
+   <div><h2 data-en="One coach. On the floor, not in an office." data-ta="Oru coach. Office-la illa, floor-la thaan nippaaru bossuh.">One coach. On the floor, not in an office.</h2></div>
+  </div>
+  <div class="coach-grid">
+   <div class="portrait reveal-item">
+    <svg class="ring" viewBox="0 0 120 120" aria-hidden="true">
+     <defs>
+      <path id="topArc" d="M 12,60 A 48,48 0 0,1 108,60"/>
+      <path id="botArc" d="M 108,60 A 48,48 0 0,1 12,60"/>
+     </defs>
+     <circle cx="60" cy="60" r="48" fill="none" stroke="color-mix(in srgb,var(--band-ink) 25%,transparent)" stroke-width="1" stroke-dasharray="3 3"/>
+     <circle cx="60" cy="60" r="56" fill="none" stroke="color-mix(in srgb,var(--band-ink) 14%,transparent)" stroke-width="0.8"/>
+     <text>
+      <textPath href="#topArc" startOffset="50%" text-anchor="middle">DINESH M • HEAD COACH</textPath>
+      <textPath href="#botArc" startOffset="50%" text-anchor="middle">THE GYM MOMENTS • PROPRIETOR</textPath>
+     </text>
+    </svg>
+    <div class="frame">
+     <img id="coachPhoto" alt="Dinesh M, head coach at The Gym Moments" src="coach_dinesh.jpg">
+     <svg class="ph" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><circle cx="50" cy="36" r="16"/><path d="M18 86c4-18 17-27 32-27s28 9 32 27"/></svg>
+    </div>
+    <span class="note" data-en="Proprietor Dinesh M" data-ta="Proprietor Dinesh M">Proprietor Dinesh M</span>
+   </div>
+   <div>
+    <blockquote data-en="&ldquo;Correct your form first. The weight will come on its own.&rdquo;" data-ta="&ldquo;Mudhalla form-a sari pannu bossuh! Weight-u thaana koodum.&rdquo;">&ldquo;Correct your form first. The weight will come on its own.&rdquo;</blockquote>
+    <p class="who" data-en="Dinesh M runs the floor himself. He knows every member here by name — at 46 people, that's not a marketing line, it's just arithmetic. If your knees hurt on squats, tell him before the set, not after." data-ta="Dinesh M-e floor-a paathukuraaru. Inga irukkura 46 perukkum peru theriyum — adhu marketing dialogue illa, simple kanakku bossuh. Squat-la mulangaal vali-nu irundha set-ku munnadiye sollunga!">Dinesh M runs the floor himself. He knows every member here by name — at 46 people, that's not a marketing line, it's just arithmetic. If your knees hurt on squats, tell him before the set, not after.</p>
+    <div class="cta">
+     <a class="btn" id="coachWa" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span data-en="Ask him something" data-ta="Coaching doubt-a kettukonga!">Ask him something</span></a>
+     <a class="btn ghost" href="tel:+919500441505"><svg aria-hidden="true"><use href="#i-phone"/></svg><span data-en="Call the coach" data-ta="Coach-a call pannunga">Call the coach</span></a>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="plans">
+ <div class="wrap">
+  <div class="head reveal">
+   <p class="tag" data-en="membership" data-ta="membership">membership</p>
+   <div>
+    <h2 data-en="Four prices. That's the whole list." data-ta="Naalu vilai. Adhu thaan mothu list.">Four prices. That's the whole list.</h2>
+    <p data-en="Pay for the months you'll actually turn up for. Longer plans cost less per month because they're easier for us to plan around — that's the only reason." data-ta="Neenga nejamaa varappora maasathukku mattum kaasu kudunga. Neela plan-ku month rate kammi — enakku plan panna easy, adhu thaan karanam, vera onnum illa.">Pay for the months you'll actually turn up for. Longer plans cost less per month because they're easier for us to plan around — that's the only reason.</p>
+   </div>
+  </div>
+  <div class="plans" id="planGrid"></div>
+  <p class="fineprint" data-en="Every plan opens the same doors: all 71 machines, the AC floor, the terrace, the kitchen, and Dinesh on the floor. No joining fee, no locker fee, no “premium hours”." data-ta="Ellaa plan-kum onne thaan: 71 machine, AC floor, terrace, kitchen, appuram Dinesh. Joining fee illa, locker fee illa, “premium hours”-nu edhuvum illa.">Every plan opens the same doors: all 71 machines, the AC floor, the terrace, the kitchen, and Dinesh on the floor. No joining fee, no locker fee, no “premium hours”.</p>
+ </div>
+</section>
+
+<section id="visit">
+ <div class="wrap">
+  <div class="head reveal">
+   <p class="tag" data-en="visit" data-ta="Vandhu Paaru">visit</p>
+   <div>
+    <h2 data-en="Come and look around first." data-ta="Mudhalla vandhu paarunga bossuh.">Come and look around first.</h2>
+    <p data-en="No appointment needed, no tour script. Walk in during opening hours and try a machine." data-ta="Appointment-um vendaam, tour dialogue-um vendaam. Open hours-la vandhu oru machine-a try pannunga.">No appointment needed, no tour script. Walk in during opening hours and try a machine.</p>
+   </div>
+  </div>
+  <div class="visit-grid reveal-item">
+   <div>
+    <ul class="hours" id="hours"></ul>
+    <div class="map-wrap" style="position:relative;border:1px solid var(--hair);border-radius:20px;overflow:hidden;background:var(--card);transition:border-color .25s">
+     <iframe src="https://maps.google.com/maps?q=10.977866,77.0231113&amp;hl=en&amp;z=17&amp;output=embed" width="100%" height="210" style="border:0;display:block;filter:brightness(0.92) contrast(1.05);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="The Gym Moments Official Google Maps Location"></iframe>
+     <a class="map" href="https://www.google.com/maps/place/The+Gym+Moments/@10.977866,77.0231113,685m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3ba857c07cae0a83:0xeb4f2d6b9c493915!8m2!3d10.977866!4d77.0231113!16s%2Fg%2F11zxjh_0_z" target="_blank" rel="noopener" style="border:0;border-top:1px solid var(--hair-2);border-radius:0">
+      <div class="lbl"><svg aria-hidden="true"><use href="#i-pin"/></svg><span style="margin:0;color:inherit;font-weight:600" data-en="The Gym Moments, Coimbatore, Tamil Nadu" data-ta="The Gym Moments, Coimbatore, Tamil Nadu">The Gym Moments, Coimbatore, Tamil Nadu</span><span style="font-size:.8rem;color:var(--mute)">Vellalore Rd, Singanallur</span></div>
+     </a>
+    </div>
+   </div>
+   <div>
+    
+     <div class="chat-sim">
+      <div class="chat-sim-head">
+       <img src="coach_dinesh.jpg" alt="Coach Dinesh M">
+       <div>
+        <b>Dinesh M (Head Coach)</b>
+        <span>Live on WhatsApp</span>
+       </div>
+      </div>
+      <div class="chat-sim-body" id="chatSimBody">
+       <div class="chat-bubble in">
+        Vanakkam! I'm Dinesh M. Ready to train at The Gym Moments Coimbatore? Type your message below and let's talk! 💪
+       </div>
+       <div class="chat-bubble out" id="chatSimUserBubble">
+        Hi Dinesh, can I talk about this? I'd like to check out the gym!
+       </div>
+      </div>
+      <div class="chat-sim-foot">
+       <input id="chatSimInput" type="text" value="Hi Dinesh, can I talk about this?" placeholder="Type your message to Dinesh…">
+       <button type="button" id="chatSimSendBtn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.9.53 3.68 1.45 5.2L2 22l5.1-1.6a9.8 9.8 0 004.94 1.3c5.44 0 9.84-4.4 9.84-9.84S17.48 2 12.04 2z"/></svg> <span>Send ↗</span></button>
+      </div>
+     </div>
+
+     <form id="joinForm" novalidate hidden>
+     <div class="two">
+      <div class="field">
+       <label for="fname" data-en="Your name" data-ta="Unga peru">Your name</label>
+       <input id="fname" name="name" required autocomplete="name">
+       <p class="err" data-en="Type your name so Dinesh knows who's messaging." data-ta="Peru podunga, yaaru message pannraanganu Dinesh-ku theriyanum.">Type your name so Dinesh knows who's messaging.</p>
+      </div>
+      <div class="field">
+       <label for="fplan" data-en="Plan you're eyeing" data-ta="Edha plan-nu paakireenga">Plan you're eyeing</label>
+       <select id="fplan" name="plan">
+        <option value="" data-en="Still deciding" data-ta="Innum yosikiren">Still deciding</option>
+        <option value="1 month — ₹2,000">1 month — ₹2,000</option>
+        <option value="3 months — ₹5,000">3 months — ₹5,000</option>
+        <option value="6 months — ₹7,000">6 months — ₹7,000</option>
+        <option value="12 months — ₹10,000">12 months — ₹10,000</option>
+       </select>
+      </div>
+     </div>
+     <div class="two">
+      <div class="field">
+       <label for="fwhen" data-en="When you'd train" data-ta="Eppo varuveenga">When you'd train</label>
+       <select id="fwhen" name="when">
+        <option value="Early morning (5–8am)" data-en="Early morning (5–8am)" data-ta="Kaalaila (5–8am)">Early morning (5–8am)</option>
+        <option value="Morning (8–11am)" data-en="Morning (8–11am)" data-ta="Kaalai (8–11am)">Morning (8–11am)</option>
+        <option value="Evening (5–8pm)" data-en="Evening (5–8pm)" data-ta="Saayangaalam (5–8pm)">Evening (5–8pm)</option>
+        <option value="Late (8–10pm)" data-en="Late (8–10pm)" data-ta="Raathiri (8–10pm)">Late (8–10pm)</option>
+       </select>
+      </div>
+      <div class="field">
+       <label for="fphone" data-en="Phone (optional)" data-ta="Phone (venumna)">Phone (optional)</label>
+       <input id="fphone" name="phone" type="tel" inputmode="tel" autocomplete="tel">
+       <p class="err" data-en="That doesn't look like a 10-digit number." data-ta="Idhu 10 number maadhiri theriyala.">That doesn't look like a 10-digit number.</p>
+      </div>
+     </div>
+     <div class="field">
+      <label for="fmsg" data-en="Anything he should know" data-ta="Avar theriyavendiyadhu">Anything he should know</label>
+      <textarea id="fmsg" name="msg" placeholder="Knee injury, first time lifting, want to lose 8kg…" data-en-ph="Knee injury, first time lifting, want to lose 8kg…" data-ta-ph="Mulangaal vali, first time, 8kg kuraikkanum…"></textarea>
+     </div>
+     <button class="btn" type="submit" style="justify-self:start"><span data-en="Write my message" data-ta="Message-a ezhudhunga">Write my message</span></button>
+     <p class="formnote" data-en="Nothing is stored on this site. Your details are turned into one message you copy and paste into the chat." data-ta="Inga edhuvum sekarikkala. Unga details ellaam serndhu oru message aagum — adha copy panni chat-la paste pannunga.">Nothing is stored on this site.</p>
+    </form>
+    <div class="sendbox" id="sendBox" hidden>
+     <p class="cap" data-en="Your message is ready. Copy it, then open the chat and paste." data-ta="Message ready. Copy pannunga, chat-a open panni paste pannunga.">Your message is ready. Copy it, then open the chat and paste.</p>
+     <pre id="sendMsg" tabindex="0"></pre>
+     <div class="sendrow">
+      <button class="btn" type="button" id="copyMsg"><span data-en="Copy message" data-ta="Message-a copy pannunga">Copy message</span></button>
+      <a class="btn ghost" href="https://wa.me/919500441505" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span data-en="Open the chat" data-ta="Chat-a open pannunga">Open the chat</span></a>
+      <button class="btn ghost" type="button" id="editMsg" data-en="Edit details" data-ta="Details maathunga">Edit details</button>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="fgrid">
+   <a class="logo" href="#top">
+    <svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M16 24h16"/><path d="M12 14v20M36 14v20M6 19v10M42 19v10"/></svg>
+    <span>TGM<small>Moments that shape you</small></span>
+   </a>
+   <div class="flinks">
+    <a href="#floor" data-en="Floor" data-ta="Floor">Floor</a>
+    <a href="#kit" data-en="Kit" data-ta="Kit">Kit</a>
+    <a href="#plans" data-en="Plans" data-ta="Kaasu">Plans</a>
+    <a href="https://www.google.com/maps/place/The+Gym+Moments/@10.977866,77.0231113,685m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3ba857c07cae0a83:0xeb4f2d6b9c493915!8m2!3d10.977866!4d77.0231113!16s%2Fg%2F11zxjh_0_z" target="_blank" rel="noopener" data-en="Directions" data-ta="Vazhi">Directions</a>
+    <button id="privacyBtn" data-en="Privacy" data-ta="Privacy">Privacy</button>
+    <button id="termsBtn" data-en="Terms" data-ta="Terms">Terms</button>
+    <button id="cookieBtn" data-en="What we store" data-ta="Naanga sekarikkiradhu">What we store</button>
+   </div>
+  </div>
+  <div class="fbase">
+   <span>© <span id="yr">2026</span> The Gym Moments · Proprietor Dinesh M · Coimbatore, Tamil Nadu</span>
+   <span data-en="Built for people who show up." data-ta="Varradhukku thayaaraana aalungalukku.">Built for people who show up.</span>
+  </div>
+ </div>
+</footer>
+
+<!-- Floating Action Button -->
+<div class="floating-actions" id="floatingActions">
+ <button type="button" class="float-btn bot-btn" id="openChatbotBtn" aria-label="Open TGM Assistant Bot">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/><circle cx="9" cy="10" r="1" fill="currentColor"/><circle cx="15" cy="10" r="1" fill="currentColor"/></svg>
+ </button>
+</div>
+
+<!-- Options Chatbot Window Modal -->
+<div class="chatbot-win" id="chatbotWin" role="dialog" aria-label="TGM Interactive Assistant" hidden>
+ <div class="bot-header">
+  <div class="bot-profile">
+   <img src="coach_dinesh.jpg" alt="Coach Dinesh">
+   <div>
+    <b>Coach Dinesh & TGM Bot</b>
+    <span class="online-status"><i></i> Online · Instant Answers</span>
+   </div>
+  </div>
+  <button type="button" class="bot-close" id="closeChatbotBtn" aria-label="Close Chatbot">&times;</button>
+ </div>
+ 
+ <div class="bot-messages" id="botMessages">
+  <div class="msg bot-msg">
+   <p>👋 <b>Vanakkam! Welcome to The Gym Moments.</b></p>
+   <p>Pick an option below for instant answers or chat directly with Dinesh:</p>
+  </div>
+ </div>
+
+ <div class="bot-options" id="botOptions">
+  <button type="button" class="opt-btn" data-opt="timings">🕒 Gym Timings & Location</button>
+  <button type="button" class="opt-btn" data-opt="plans">💰 Membership Plans & Rates</button>
+  <button type="button" class="opt-btn" data-opt="features">🏋️ 71 Machines & Live Kitchen</button>
+  <button type="button" class="opt-btn" data-opt="whatsapp">💬 Chat directly on WhatsApp</button>
+ </div>
+</div>
+
+<nav class="dock" aria-label="Quick links">
+ <a href="#kit"><svg aria-hidden="true"><use href="#i-grid"/></svg><span data-en="Kit" data-ta="Kit">Kit</span></a>
+ <a href="#plans"><svg aria-hidden="true"><use href="#i-tag"/></svg><span data-en="Plans" data-ta="Kaasu">Plans</span></a>
+ <a href="#visit"><svg aria-hidden="true"><use href="#i-pin"/></svg><span data-en="Visit" data-ta="Varalaam">Visit</span></a>
+ <a class="wa" id="dockWa" href="https://api.whatsapp.com/send?phone=919500441505&text=Hi%20Dinesh,%20can%20I%20talk%20about%20joining%20TGM?" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp</span></a>
+</nav>
+
+<button class="top" id="toTop" aria-label="Take me to top"><svg aria-hidden="true"><use href="#i-up"/></svg><span data-en="Top" data-ta="Mela">Top</span></button>
+
+<div class="consent" id="consent" role="region" aria-label="Storage notice">
+ <p data-en="<b>This site stores two things in your browser:</b> whether you picked dark or light, and English or Tanglish. No analytics, no ad trackers, no third-party cookies." data-ta="<b>Rendu vishayam mattum unga browser-la store aagum:</b> dark-a light-a, appuram English-a Tanglish-a. Analytics illa, ad tracker illa, third-party cookie illa."><b>This site stores two things in your browser:</b> whether you picked dark or light, and English or Tanglish. No analytics, no ad trackers, no third-party cookies.</p>
+ <div class="row">
+  <button class="btn" id="cAccept" data-en="Remember my choices" data-ta="Nyaabagam vechukonga">Remember my choices</button>
+  <button class="btn ghost" id="cReject" data-en="Don't store anything" data-ta="Edhuvum vendaam">Don't store anything</button>
+ </div>
+</div>
+
+<dialog id="dlgPrivacy"><div class="dlg">
+ <button class="chip x" data-close aria-label="Close"><svg aria-hidden="true"><use href="#i-x"/></svg></button>
+ <h3>Privacy</h3>
+ <p>The Gym Moments does not run analytics, advertising pixels or third-party trackers on this site.</p>
+ <h4>What stays in your browser</h4>
+ <ul><li>Your theme choice (dark or light).</li><li>Your language choice (English or Tanglish).</li><li>Whether you dismissed the storage notice.</li></ul>
+ <p>These are stored locally with <code>localStorage</code> and never leave your device. Choose “Don't store anything” and they are kept only until you close the tab.</p>
+ <h4>The enquiry form</h4>
+ <p>The form on this page does not submit anywhere. It composes a message and hands it to WhatsApp, where you decide whether to send it. Once you send it, WhatsApp's own privacy terms apply to that conversation, and Dinesh keeps your number to reply to you.</p>
+ <h4>Links out</h4>
+ <p>Google Maps and WhatsApp open in a new tab and are governed by their own policies. We load nothing from them until you click.</p>
+ <h4>Questions</h4>
+ <p>Ask Dinesh on 9500441505.</p>
+</div></dialog>
+
+<dialog id="dlgTerms"><div class="dlg">
+ <button class="chip x" data-close aria-label="Close"><svg aria-hidden="true"><use href="#i-x"/></svg></button>
+ <h3>Membership terms</h3>
+ <h4>Fees</h4>
+ <p>Prices shown are the full amount for the period stated, payable at the start. There is no joining fee, locker fee or registration charge. Prices are a limited-period offer and may change for new members; your rate is fixed for the term you paid for.</p>
+ <h4>Duration and pauses</h4>
+ <p>A membership runs from the day you start. Freezes for medical reasons or long travel are handled case by case — talk to Dinesh before the fact, not after.</p>
+ <h4>Refunds</h4>
+ <p>Paid memberships are not refundable once the term begins. If the gym closes for reasons on our side, the missed days are added to your term.</p>
+ <h4>On the floor</h4>
+ <p>Re-rack your weights. Use a collar on loaded bars. Tell the coach about injuries, medication or heart conditions before you start. Training is at your own risk and you should get medical clearance if you're unsure.</p>
+ <h4>Hours</h4>
+ <p>Monday to Saturday 5:00am–10:00pm, Sunday 5:00pm–10:00pm. Public holidays may differ; we post changes on WhatsApp.</p>
+</div></dialog>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HealthClub","name":"The Gym Moments","alternateName":"TGM","slogan":"Moments that shape you","telephone":"+91-9500441505","address":{"@type":"PostalAddress","addressLocality":"Coimbatore","addressRegion":"Tamil Nadu","addressCountry":"IN"},"hasMap":"https://www.google.com/maps/place/The+Gym+Moments/@10.977866,77.0231113,685m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3ba857c07cae0a83:0xeb4f2d6b9c493915!8m2!3d10.977866!4d77.0231113!16s%2Fg%2F11zxjh_0_z","priceRange":"₹2000–₹10000","currenciesAccepted":"INR","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"05:00","closes":"22:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"17:00","closes":"22:00"}],"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Live kitchen","value":true},{"@type":"LocationFeatureSpecification","name":"Air conditioning","value":true},{"@type":"LocationFeatureSpecification","name":"Open-air terrace","value":true}]}
+</script>
+
+<script>
+(function(){
+"use strict";
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const RM = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const WA = "https://api.whatsapp.com/send?phone=919500441505";
+const MAPS = "https://www.google.com/maps/place/The+Gym+Moments/@10.977866,77.0231113,685m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3ba857c07cae0a83:0xeb4f2d6b9c493915!8m2!3d10.977866!4d77.0231113!16s%2Fg%2F11zxjh_0_z";
+const MEMBERS = 46;
+
+/* ── equipment data ───────────────────────────────────────────── */
+const EQ = [[1, "Treadmill", "cardio", "Motorized high-performance cardio treadmill with live telemetry monitoring.", "equipments/eq_1.png", "https://images.unsplash.com/photo-1576678927484-cc909957088c?auto=format&fit=crop&w=800&q=80"], [2, "Stair Climber", "cardio", "Heavy-duty revolving staircase for intense aerobic conditioning.", "equipments/eq_2.png", "https://images.unsplash.com/photo-1576678927484-cc909957088c?auto=format&fit=crop&w=800&q=80"], [3, "Spin Bike", "cardio", "Precision flywheel magnetic spin bike for high-calorie endurance rides.", "equipments/eq_3.png", "https://images.unsplash.com/photo-1576678927484-cc909957088c?auto=format&fit=crop&w=800&q=80"], [4, "Lat Pulldown / Seated Row", "func", "Dual-function back strength station with biomechanical cable path.", "equipments/eq_4.png", "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80"], [5, "Pec Fly / Rear Delt", "func", "Dual-overhead arm station targeting pectoral and posterior deltoid muscles.", "equipments/eq_5.png", "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80"], [6, "Multi-Press", "func", "Adjustable pressing station for chest, incline press, and shoulder press.", "equipments/eq_6.png", "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80"], [7, "Leg Curl / Leg Extension", "func", "Dual leg workstation targeting quadriceps isolation and hamstring development.", "equipments/eq_7.png", "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80"], [8, "Adductor / Abductor", "func", "Inner and outer thigh hip isolation pin-loaded machine.", "equipments/eq_8.png", "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80"], [9, "Bicep Curl – Version 1", "func", "Seated preacher-style isolateral arm curl station.", "equipments/eq_9.png", "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80"], [10, "Bicep Curl – Version 2", "func", "Standing/seated dual grip cable bicep isolation unit.", "equipments/eq_10.png", "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80"], [11, "Lateral Trainer", "cardio", "3D movement elliptical targeting glutes, quads, and lateral agility.", "equipments/eq_11.png", "https://images.unsplash.com/photo-1576678927484-cc909957088c?auto=format&fit=crop&w=800&q=80"], [12, "Metro", "cardio", "Low-impact smooth glide elliptical trainer.", "equipments/eq_12.png", "https://images.unsplash.com/photo-1576678927484-cc909957088c?auto=format&fit=crop&w=800&q=80"], [13, "Blowero", "cardio", "High-airflow air bike for progressive HIIT workouts.", "equipments/eq_13.png", "https://images.unsplash.com/photo-1576678927484-cc909957088c?auto=format&fit=crop&w=800&q=80"], [14, "Seated Tricep Dip", "func", "Preacher-style seated press-down tricep isolation station.", "equipments/eq_14.png", "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80"], [15, "Circular Lat Pulldown", "plate", "Converging axis wide lat pulldown unit for back width.", "equipments/eq_15.png", "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80"], [16, "Vertical Knee Raise", "rack", "Bodyweight core station for leg raises, pull-ups, and dips.", "equipments/eq_16.png", "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"], [17, "Wrist Curl", "func", "Forearm and wrist flexor isolation bench system.", "equipments/eq_17.png", "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=800&q=80"], [18, "Hack Squat", "plate", "45-degree heavy linear hack squat station for quad hyper-drive.", "equipments/eq_18.png", "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80"], [19, "Standing Shoulder Press", "plate", "Isolateral standing overhead press machine.", "equipments/eq_19.png", "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80"], [20, "Smith Row", "plate", "Guided barbell bent-over row and shrug machine.", "equipments/eq_20.png", "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80"], [21, "Hip Thrust", "plate", "Dedicated glute bridge hip thrust station with padded hip belt.", "equipments/eq_21.png", "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80"], [22, "Ab Coaster", "func", "Curved track lower ab slider system for core sculpting.", "equipments/eq_22.png", "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80"], [23, "Leg Press", "plate", "Heavy duty 45-degree linear leg press with 500kg capacity.", "equipments/eq_23.png", "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80"], [24, "Cable Crossovers", "func", "Multi-angle dual adjustable pulley functional trainer tower.", "equipments/eq_24.png", "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80"], [25, "Smith Machine / Squat Rack", "rack", "Commercial power rack integrated with linear bearing Smith machine.", "equipments/eq_25.png", "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"], [26, "Dumbbell Rack", "rack", "3-tier heavy gauge steel dumbbell storage rack.", "equipments/eq_26.png", "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"], [27, "Olympic Flat Bench", "rack", "Competition-standard flat bench with spotter platform and rod catches.", "equipments/eq_27.png", "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"], [28, "Olympic Incline Bench", "rack", "30-degree incline chest bench with integrated plate storage pins.", "equipments/eq_28.png", "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"], [29, "Olympic Decline Bench", "rack", "Decline chest press bench with leg locking pads.", "equipments/eq_29.png", "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"], [30, "Hyperextension", "rack", "45-degree back extension bench for glute and lumbar strength.", "equipments/eq_30.png", "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"], [31, "Belt Squat", "plate", "De-loaded spine squat station transferring load directly to hips.", "equipments/eq_31.png", "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80"], [32, "Fit Bench", "rack", "Multi-angle compact training bench with dumbbell slots.", "equipments/eq_32.png", "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"], [33, "Flat Bench", "rack", "High-density foam utility flat bench for free weight training.", "equipments/eq_33.png", "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"], [34, "Utility Stool", "rack", "90-degree upright seating stool for shoulder and arm presses.", "equipments/eq_34.png", "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"], [35, "Seated Calf Raise", "plate", "Soleus isolation seated calf press with comfortable thigh pads.", "equipments/eq_35.png", "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80"], [36, "Fixed Barbells", "func", "Set of pre-weighted straight and EZ barbells from 10kg to 45kg.", "equipments/eq_36.png", "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80"], [37, "Straight Bar", "func", "Solid steel chrome straight bar for fixed barbell rack.", "equipments/eq_37.png", "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80"], [38, "Curl Bar", "func", "Ergonomic EZ cambered fixed barbell for wrist safety.", "equipments/eq_38.png", "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80"], [39, "Fixed Barbell Rack", "rack", "Vertical dual-sided storage rack for pre-weighted barbells.", "equipments/eq_39.png", "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"], [40, "Plate Tree", "rack", "A-frame Olympic bumper and iron weight plate tree organizer.", "equipments/eq_40.png", "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"], [41, "AB Board", "func", "Decline adjustable abdominal bench for weighted sit-ups.", "equipments/eq_41.png", "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80"], [42, "TPR Dumbbells", "func", "Thermoplastic rubber heavy-duty hex dumbbells set (2.5kg to 50kg).", "equipments/eq_42.png", "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80"], [43, "TPR Plates", "func", "Tri-grip rubber encased precision weight plates.", "equipments/eq_43.png", "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80"], [44, "Olympic 7-Foot Rod", "func", "20kg 700lb test chrome Olympic barbell with knurling.", "equipments/eq_44.png", "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80"], [45, "Olympic 4-Foot Rod", "func", "Compact 4-foot straight Olympic bar for arm workouts.", "equipments/eq_45.png", "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80"], [46, "Olympic EZ 4-Foot Rod", "func", "Cambered 4-foot EZ bar for bicep and tricep extension movements.", "equipments/eq_46.png", "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80"], [47, "Lock", "func", "Quick-release aluminum barbell collar clamps.", "equipments/eq_47.png", "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=800&q=80"], [48, "Tricep Rope", "func", "Heavy braided nylon rope attachment with rubber stoppers.", "equipments/eq_48.png", "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=800&q=80"], [49, "Rod Holder", "rack", "Vertical storage tube rack for 5 Olympic barbells.", "equipments/eq_49.png", "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"], [50, "CC Squat", "func", "Sissy squat bench for quad isolation and knee stability.", "equipments/eq_50.png", "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80"], [51, "Push Bar", "func", "Parallette push-up bars for deep chest stretch and dips.", "equipments/eq_51.png", "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80"], [52, "Leg Weight", "func", "Adjustable ankle weights for resistance cardio and rehab.", "equipments/eq_52.png", "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=800&q=80"], [53, "Gym Ball", "func", "Anti-burst Swiss exercise ball for core balance training.", "equipments/eq_53.png", "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80"], [54, "Medicine Ball", "func", "Dual-handle rubber medicine balls for explosive core work.", "equipments/eq_54.png", "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80"], [55, "Wrist Forearm Blaster", "func", "Roller wrist wrist blaster with weight plate peg.", "equipments/eq_55.png", "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=800&q=80"], [56, "Extreme Aerobic Stepper", "func", "Non-slip adjustable height fitness stepper platform.", "equipments/eq_56.png", "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80"], [57, "Shoulder Back Support", "func", "Posture corrector and spinal alignment harness for heavy lifting.", "equipments/eq_57.png", "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=800&q=80"], [58, "Slam Ball", "func", "Heavy textured non-bounce slam balls for conditioning.", "equipments/eq_58.png", "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80"], [59, "Nirvana Yoga Mat", "func", "High-density TPE anti-tear non-slip yoga and mobility mat.", "equipments/eq_59.png", "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80"], [60, "Nebula Ladder", "func", "Speed and agility footwork ladder for athletic drills.", "equipments/eq_60.png", "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80"], [61, "Vinyl Kettlebell – 10 kg", "func", "10kg vinyl coated cast iron kettlebell.", "equipments/eq_61.png", "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80"], [62, "Vinyl Kettlebell – 20 kg", "func", "20kg heavy vinyl coated kettlebell for swings and Turkish get-ups.", "equipments/eq_62.png", "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80"], [63, "Foam Roller", "func", "High-density EVA foam roller for myofascial release and recovery.", "equipments/eq_63.png", "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80"], [64, "BOSU Ball", "func", "Half-dome balance trainer with resistance bands.", "equipments/eq_64.png", "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80"], [65, "Jumping Rope", "func", "High-speed ball bearing steel wire speed jump rope.", "equipments/eq_65.png", "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80"], [66, "AB Wheel Roller", "func", "Dual-wheel core ab roller with knee pad.", "equipments/eq_66.png", "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80"], [67, "Rubber Band", "func", "Set of heavy resistance loop bands for mobility and pull-up assistance.", "equipments/eq_67.png", "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80"], [68, "Knee Wrap", "func", "72-inch elastic knee compression wraps for heavy squats.", "equipments/eq_68.png", "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=800&q=80"], [69, "Wrist Strap", "func", "Heavy-duty cotton lifting straps for deadlifts and rows.", "equipments/eq_69.png", "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=800&q=80"], [70, "Weightlifting Weight Bag", "func", "Sand-filled heavy power bag with multi-handles.", "equipments/eq_70.png", "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80"], [71, "Fitness Tube", "func", "Resistance exercise tube with cushioned foam handles.", "equipments/eq_71.png", "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80"]];
+const CATS = [
+ ["all",  "Everything",     "Ellaam"],
+ ["cardio","Cardio",        "Cardio"],
+ ["pin",  "Cable & pin",    "Cable / pin"],
+ ["plate","Plate loaded",   "Plate loaded"],
+ ["rack", "Racks & benches","Rack, bench"],
+ ["free", "Free weights",   "Free weights"],
+ ["func", "Functional",     "Functional"],
+ ["acc",  "Accessories",    "Accessories"]
+];
+const HUE = {cardio:"var(--h1)", pin:"var(--h3)", plate:"var(--h5)", rack:"var(--h4)", free:"var(--h2)", func:"var(--h6)", acc:"var(--h7)"};
+function glyph(name,cat){
+ const n = name.toLowerCase();
+ if(/treadmill/.test(n)) return "g-tread";
+ if(/stair/.test(n)) return "g-stairs";
+ if(/bike|metro|lateral|blowero|cycle/.test(n)) return "g-bike";
+ if(/kettlebell/.test(n)) return "g-kb";
+ if(/ball/.test(n)) return "g-ball";
+ if(/mat|stepper|board/.test(n)) return "g-mat";
+ if(/rope|ladder|tube|band|jump/.test(n)) return "g-rope";
+ if(/wheel|roller|coaster/.test(n)) return "g-wheel";
+ if(/dumbbell/.test(n)) return "g-db";
+ if(/bar\b|barbell|rod|plate|straight|curl bar|tree/.test(n)) return "g-bar";
+ if(/bench|stool/.test(n)) return "g-bench";
+ if(/rack|holder|smith/.test(n)) return "g-rack";
+ if(/wrap|strap|lock|support|blaster|weight bag|leg weight/.test(n)) return "g-strap";
+ if(/ab |knee raise|hyper/.test(n)) return "g-core";
+ if(cat==="pin") return "g-cable";
+ if(cat==="plate") return "g-machine";
+ if(cat==="rack") return "g-rack";
+ if(cat==="free") return "g-db";
+ if(cat==="acc") return "g-strap";
+ return "g-core";
+}
+const CATNAME = Object.fromEntries(CATS.map(c=>[c[0],[c[1],c[2]]]));
+
+/* ── prefs + consent ──────────────────────────────────────────── */
+let consent = null, prefs = {theme:null, lang:"en"};
+try{ consent = localStorage.getItem("tgm.consent"); }catch(e){}
+if(consent === "yes"){
+ try{ prefs.theme = localStorage.getItem("tgm.theme"); prefs.lang = localStorage.getItem("tgm.lang") || "en"; }catch(e){}
+}
+function persist(){
+ if(consent !== "yes") return;
+ try{ if(prefs.theme) localStorage.setItem("tgm.theme", prefs.theme); localStorage.setItem("tgm.lang", prefs.lang); }catch(e){}
+}
+
+/* ── theme -───────────────────────────────────────────────────── */
+const themeBtn = $("#themeBtn");
+function applyTheme(t){
+ document.documentElement.setAttribute("data-theme", t);
+ themeBtn.setAttribute("aria-label", t==="dark" ? "Switch to light mode" : "Switch to dark mode");
+ $("use", themeBtn).setAttribute("href", t==="dark" ? "#i-sun" : "#i-moon");
+ requestAnimationFrame(()=>{ const m=$('meta[name=theme-color]');
+  if(m) m.content = getComputedStyle(document.documentElement).getPropertyValue("--paper").trim() || "#03190F"; });
+}
+applyTheme(prefs.theme || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"));
+themeBtn.addEventListener("click", ()=>{
+ prefs.theme = document.documentElement.getAttribute("data-theme")==="dark" ? "light" : "dark";
+ applyTheme(prefs.theme); persist();
+});
+
+/* ── language ─────────────────────────────────────────────────── */
+function applyLang(l){
+ document.documentElement.lang = l==="ta" ? "ta-Latn" : "en";
+ $$("[data-en]").forEach(el=>{
+  const v = el.getAttribute("data-"+l); if(v==null) return;
+  if(/<b>|<em>/.test(v)) el.innerHTML = v; else el.textContent = v;
+ });
+ $$("[data-en-ph]").forEach(el=> el.placeholder = el.getAttribute("data-"+l+"-ph") || el.placeholder);
+ $$("#langBtn b").forEach((b,i)=> (i === (l==="ta"?1:0)) ? b.setAttribute("data-on","") : b.removeAttribute("data-on"));
+ renderStatus(); renderHours(); renderPlans(); renderCards(); buildFilters(); setWa();
+}
+$("#langBtn").addEventListener("click", ()=>{ prefs.lang = prefs.lang==="en" ? "ta" : "en"; applyLang(prefs.lang); persist(); });
+const L = (en,ta)=> prefs.lang==="ta" ? ta : en;
+
+/* ── whatsapp links ───────────────────────────────────────────── */
+function setWa(){
+ const msg = "Hi Dinesh, can I talk about this?";
+ const waUrl = "https://api.whatsapp.com/send?phone=919500441505&text=" + encodeURIComponent(msg);
+ ["#heroWa","#coachWa","#dockWa"].forEach(s=>{ const el=$(s); if(el) el.href = waUrl; });
+}
+
+/* ── tally board ──────────────────────────────────────────────── */
+(function tally(){
+ const svg = $("#tallySvg"); if(!svg) return;
+ const groups = Math.floor(MEMBERS/5), rest = MEMBERS%5;
+ const perRow = 5, gw = 56, x0 = 18, rowY = [12, 66], h = 42;
+ const rnd = (n)=> (Math.sin(n*12.9898)*43758.5453 % 1) * 3;
+ let html = "", idx = 0;
+ const unit = (gi, count, cross)=>{
+  const row = Math.floor(gi/perRow), col = gi%perRow;
+  const bx = x0 + col*gw, by = rowY[row];
+  let s = "";
+  for(let i=0;i<count;i++){
+   const x = bx + i*8 + rnd(idx);
+   s += `<path style="--i:${idx}" data-num="${idx+1}" role="button" aria-label="Member stroke ${idx+1}" d="M${x.toFixed(1)} ${by} L${(x-1.6+rnd(idx+7)).toFixed(1)} ${by+h}"/>`;
+   idx++;
+  }
+  if(cross){ s += `<path class="x" style="--i:${idx}" data-num="${idx+1}" role="button" aria-label="Member stroke ${idx+1}" d="M${bx-4} ${by+h-6} L${bx+30} ${by+4}"/>`; idx++; }
+  return s;
+ };
+ for(let g=0; g<groups; g++) html += unit(g,4,true);
+ if(rest) html += unit(groups, rest, false);
+ svg.innerHTML = html;
+
+ const paths = $$("path", svg);
+ const tip = $("#tallyTip");
+ paths.forEach(p=>{
+  const l=p.getTotalLength(); p.style.strokeDasharray=l; p.style.strokeDashoffset = RM?0:l; p.style.transition="stroke-dashoffset .34s cubic-bezier(.3,.8,.4,1)";
+  p.addEventListener("mouseenter", ()=>{
+   const num = p.dataset.num;
+   if(tip) tip.textContent = L(`Member mark #${num} · Active lifter`, `Member mark #${num} · Active member-u`);
+  });
+  p.addEventListener("mouseleave", ()=>{
+   if(tip && !svg.querySelector(".stroke47")) tip.textContent = L("Hover or tap strokes · Tap button to preview yours", "Kodu-va touch pannunga · Unga stroke-a preview pannunga");
+  });
+  p.addEventListener("click", ()=>{
+   paths.forEach(x=>x.classList.remove("active"));
+   p.classList.add("active");
+   const num = p.dataset.num;
+   if(tip) tip.textContent = L(`Member mark #${num} selected! Join today to claim your rep.`, `Member #${num} selected! Innaike join panni unga stroke-a edukkalaam.`);
+  });
+ });
+
+ const addBtn = $("#tallyAddBtn");
+ let clickCount = 0;
+ if(addBtn){
+  addBtn.addEventListener("click", ()=>{
+   clickCount++;
+   if(clickCount === 1){
+    if(!svg.querySelector(".stroke47")){
+     const gi = groups, col = gi%perRow, row = Math.floor(gi/perRow);
+     const bx = x0 + col*gw + rest*8, by = rowY[row];
+     const newPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
+     newPath.setAttribute("class", "stroke47");
+     newPath.setAttribute("d", `M${bx.toFixed(1)} ${by} L${(bx-1.6).toFixed(1)} ${by+h}`);
+     svg.appendChild(newPath);
+     $("#heroCount").textContent = "47";
+     $("#tallyNum").textContent = "47";
+    }
+    if(tip) tip.textContent = L("⚡ Rep #47 added! That's YOU on the board. Chat Dinesh now!", "⚡ Mark #47 add aagiduchu! Idhu thaan UNGA mark. Dinesh-ku message pannunga!");
+    addBtn.style.borderColor = "#F3C63F";
+    addBtn.textContent = L("✓ Your mark is live!", "✓ Unga mark live-la iruku!");
+   } else if(clickCount === 2){
+    addBtn.textContent = L("No going back!", "Thirumbi poga mudiyaadhu!");
+    if(tip) tip.textContent = L("⚠️ No going back once you're on the floor!", "⚠️ Floor-la irukumbodhu thirumbi poga mudiyaadhu bossuh!");
+   } else if(clickCount === 3){
+    addBtn.textContent = L("Ok fine, hard to let you go...", "Seri ok, unga-la vida mudiyaadhu...");
+    if(tip) tip.textContent = L("🥺 Ok fine... it's hard to let you go!", "🥺 Seri ok... unga-la vida mudiyaadhu!");
+   } else if(clickCount >= 4){
+    addBtn.textContent = L("Bye! 👋", "Bye! 👋");
+    if(tip) tip.textContent = L("👋 Rep removed. We hope to see you back on the floor soon!", "👋 Mark removed. See you soon bossuh!");
+    const p47 = svg.querySelector(".stroke47");
+    if(p47) p47.remove();
+    $("#heroCount").textContent = "46";
+    $("#tallyNum").textContent = "46";
+    setTimeout(()=>{
+     clickCount = 0;
+     addBtn.style.borderColor = "";
+     addBtn.textContent = L("+ Add mark #47", "+ Claim Rep #47");
+     if(tip) tip.textContent = L("Hover or tap marks · Tap button to preview yours", "Mark-a touch pannunga · Unga rep-a preview pannunga");
+    }, 2200);
+   }
+  });
+ }
+
+ if(RM) return;
+ const io = new IntersectionObserver(es=>es.forEach(e=>{ if(!e.isIntersecting) return; io.disconnect();
+   paths.forEach((p,i)=> setTimeout(()=>{ p.style.strokeDashoffset = 0; }, 260 + i*42));
+   let n = 0, t0 = performance.now(), dur = 260 + paths.length*42;
+   const num = $("#tallyNum"), hero = $("#heroCount");
+   (function tick(t){ const k = Math.min(1,(t-t0)/dur); n = Math.round(k*MEMBERS);
+     num.textContent = n; hero.textContent = n; if(k<1) requestAnimationFrame(tick); })(t0);
+ }), {threshold:.3});
+ io.observe($("#tallyBox"));
+})();
+
+/* ── open / closed ────────────────────────────────────────────── */
+function ist(){
+ const p = new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Kolkata",weekday:"short",hour:"2-digit",minute:"2-digit",hour12:false}).formatToParts(new Date());
+ const g = t => p.find(x=>x.type===t).value;
+ return {day:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(g("weekday")), mins:+g("hour")*60 + +g("minute")};
+}
+function window_(day){ return day===0 ? [17*60, 22*60] : [5*60, 22*60]; }
+function renderStatus(){
+ const {day,mins} = ist(), [o,c] = window_(day), open = mins>=o && mins<c;
+ const box = $("#status"); box.classList.toggle("open", open);
+ $("#statusText").textContent = open
+   ? L("Open now · closes 10pm", "Ippo open · 10pm-ku close")
+   : L(day===0||mins>=c ? "Closed · opens 5am" : "Closed · opens 5am", "Ippo close · 5am-ku open");
+ if(!open && day===6 && mins>=c) $("#statusText").textContent = L("Closed · opens 5pm Sunday","Close · Sunday 5pm-ku open");
+ if(!open && day===0 && mins<o) $("#statusText").textContent = L("Closed · opens 5pm today","Close · innaiku 5pm-ku open");
+}
+function renderHours(){
+ const {day} = ist();
+ const rows = [
+  [L("Monday – Saturday","Monday – Saturday"), "5:00am – 10:00pm", day>=1],
+  [L("Sunday","Sunday"), "5:00pm – 10:00pm", day===0]
+ ];
+ $("#hours").innerHTML = rows.map(r=>`<li class="${r[2]?"now":""}"><span>${r[0]}${r[2]?` · ${L("today","innaiku")}`:""}</span><b>${r[1]}</b></li>`).join("");
+}
+
+/* ── plans ────────────────────────────────────────────────────── */
+const PLANS = [
+ {m:1,  p:2000,  en:"Try the floor for four weeks.",              ta:"Naalu vaaram floor-a paarunga."},
+ {m:3,  p:5000,  en:"Long enough to see something change.",        ta:"Maatram theriya idhu pothum."},
+ {m:6,  p:7000,  en:"Where most people stop thinking about it.",   ta:"Idhula thaan yosikkardhe nikkum.", best:true},
+ {m:12, p:10000, en:"Cheapest month you'll ever buy here.",        ta:"Inga kidaikkura kammi month rate."}
+];
+const inr = n => "₹" + n.toLocaleString("en-IN");
+function renderPlans(){
+ $("#planGrid").innerHTML = PLANS.map(pl=>{
+  const per = Math.round(pl.p/pl.m), save = pl.m*2000 - pl.p;
+  return `<article class="plan reveal-item${pl.best?" best":""}">
+   ${pl.best?`<span class="flag">${L("best value","adhigam save")}</span>`:""}
+   <p class="dur">${pl.m} ${L(pl.m===1?"month":"months", pl.m===1?"maasam":"maasam")}</p>
+   <p class="amt">${inr(pl.p)}</p>
+   <p class="per">${pl.m===1 ? L("per month","oru maasathukku") : `${inr(per)} ${L("a month","oru maasathukku")}`}</p>
+   <p class="blurb">${L(pl.en,pl.ta)}</p>
+   <span class="save"${save>0?"":' style="visibility:hidden"'}>${L("saves","save")} ${inr(Math.max(save,0))}</span>
+   <p class="go"><button type="button" data-pick="${pl.m} ${L("months","maasam")} — ${inr(pl.p)}">${L("Take this one","Idha edukkiren")}</button></p>
+  </article>`;
+ }).join("");
+}
+
+/* ── equipment ────────────────────────────────────────────────── */
+let filter = "all", query = "";
+function buildFilters(){
+ $("#filters").innerHTML = CATS.map(c=>
+  `<button type="button" data-cat="${c[0]}" aria-pressed="${filter===c[0]}">${L(c[1],c[2])}</button>`).join("");
+}
+function matches(){
+ const q = query.trim().toLowerCase();
+ return EQ.filter(e => (filter==="all" || e[2]===filter) &&
+   (!q || e[1].toLowerCase().includes(q) || e[3].toLowerCase().includes(q) || CATNAME[e[2]][0].toLowerCase().includes(q)));
+}
+function renderCards(){
+ const list = matches(), track = $("#track");
+ $("#kitMeta").textContent = L(`${list.length} of ${EQ.length}`, `${EQ.length}-la ${list.length}`);
+ $("#empty").hidden = list.length > 0;
+ track.hidden = list.length === 0;
+ $("#prev").parentElement.hidden = list.length === 0;
+ track.innerHTML = list.map(e=>`<article class="card" style="--h:${HUE[e[2]]}">
+   <div class="pic">
+    <img src="${e[4]}" alt="${e[1]}" loading="lazy" onerror="this.style.display='none';if(this.nextElementSibling)this.nextElementSibling.style.display='block';">
+    <svg aria-hidden="true" style="display:none"><use href="#${glyph(e[1],e[2])}"/></svg>
+   </div>
+   <div class="body"><h4>${e[1]}</h4><p>${e[3]}.</p><p class="cat">${L(CATNAME[e[2]][0],CATNAME[e[2]][1])}</p></div>
+  </article>`).join("");
+ track.scrollLeft = 0; arrows();
+}
+$("#planGrid").addEventListener("click", ev=>{
+ const b = ev.target.closest("button[data-pick]"); if(!b) return;
+ const sel = $("#fplan"), want = b.dataset.pick;
+ [...sel.options].forEach(o=>{ if(o.value.startsWith(want.split(" ")[0]+" ")) sel.value = o.value; });
+ 
+ // UPDATE MINI WHATSAPP LIVE CHAT TEXT
+ const simInput = $("#chatSimInput"), simUser = $("#chatSimUserBubble");
+ const planMsg = `Hi Dinesh, can I talk about this? I'd like to take the ${want} plan!`;
+ if(simInput) simInput.value = planMsg;
+ if(simUser) simUser.textContent = planMsg;
+ 
+ $("#visit").scrollIntoView({behavior: RM?"auto":"smooth"});
+ setTimeout(()=> { if(simInput) simInput.focus({preventScroll:true}); }, RM?0:600);
+});
+$("#filters").addEventListener("click", ev=>{
+ const b = ev.target.closest("button[data-cat]"); if(!b) return;
+ filter = b.dataset.cat; buildFilters(); renderCards();
+});
+$("#q").addEventListener("input", e=>{ query = e.target.value; renderCards(); });
+
+/* carousel */
+const track = $("#track");
+function arrows(){
+ const max = track.scrollWidth - track.clientWidth - 2;
+ $("#prev").disabled = track.scrollLeft <= 2;
+ $("#next").disabled = track.scrollLeft >= max;
+}
+function step(dir){
+ const card = track.querySelector(".card");
+ const w = card ? card.offsetWidth + 16 : 240;
+ track.scrollBy({left: dir * w * Math.max(1, Math.floor(track.clientWidth/w) - 1), behavior: RM?"auto":"smooth"});
+}
+$("#prev").addEventListener("click", ()=>step(-1));
+$("#next").addEventListener("click", ()=>step(1));
+track.addEventListener("scroll", arrows, {passive:true});
+addEventListener("resize", arrows);
+let dragging=false, sx=0, sl=0, moved=0;
+track.addEventListener("pointerdown", e=>{
+ if(e.pointerType==="touch") return;
+ dragging=true; moved=0; sx=e.clientX; sl=track.scrollLeft; track.classList.add("drag"); track.setPointerCapture(e.pointerId);
+});
+track.addEventListener("pointermove", e=>{ if(!dragging) return; const d=e.clientX-sx; moved=Math.abs(d); track.scrollLeft = sl-d; });
+const endDrag = e=>{ if(!dragging) return; dragging=false; track.classList.remove("drag");
+ if(moved>6){ const card=track.querySelector(".card"); const w=card?card.offsetWidth+16:240;
+  track.scrollTo({left: Math.round(track.scrollLeft/w)*w, behavior: RM?"auto":"smooth"}); } };
+track.addEventListener("pointerup", endDrag); track.addEventListener("pointercancel", endDrag);
+
+/* ── form → whatsapp ──────────────────────────────────────────── */
+const sendBox = $("#sendBox"), joinForm = $("#joinForm");
+$("#editMsg").addEventListener("click", ()=>{ sendBox.hidden = true; joinForm.hidden = false; $("#fname").focus(); });
+$("#copyMsg").addEventListener("click", async ()=>{
+ const txt = $("#sendMsg").textContent, btn = $("#copyMsg span");
+ let ok = false;
+ try{ await navigator.clipboard.writeText(txt); ok = true; }
+ catch(e){
+  const ta = document.createElement("textarea"); ta.value = txt;
+  ta.style.cssText = "position:fixed;opacity:0"; document.body.appendChild(ta);
+  ta.select(); try{ ok = document.execCommand("copy"); }catch(e2){}
+  ta.remove();
+ }
+ btn.textContent = ok ? L("Copied — now open the chat","Copy aagiduchu — chat-a open pannunga")
+                      : L("Select the text above and copy","Mela iruka text-a select panni copy pannunga");
+ setTimeout(()=> btn.textContent = L("Copy message","Message-a copy pannunga"), 4000);
+});
+joinForm.addEventListener("submit", ev=>{
+ ev.preventDefault();
+ const name = $("#fname"), phone = $("#fphone");
+ let ok = true;
+ const bad = (input, cond) => { input.parentElement.classList.toggle("bad", cond); if(cond) ok = false; };
+ bad(name, name.value.trim().length < 2);
+ bad(phone, phone.value.trim() !== "" && !/^[+]?[\d\s-]{10,15}$/.test(phone.value.trim()));
+ if(!ok){ $(".field.bad input").focus(); return; }
+ const plan = $("#fplan").value, when = $("#fwhen"), msg = $("#fmsg").value.trim();
+ const whenTxt = when.options[when.selectedIndex].value;
+ const lines = prefs.lang==="ta"
+  ? ["Hi Dinesh, can I talk about this?",
+     `En peru ${name.value.trim()}.`,
+     plan ? `Plan: ${plan}` : "Plan: innum decide pannala",
+     `Vara neram: ${whenTxt}`,
+     phone.value.trim() ? `Phone: ${phone.value.trim()}` : "",
+     msg ? `Sollanum: ${msg}` : "",
+     "— TGM site-la irundhu."]
+  : ["Hi Dinesh, can I talk about this?",
+     `I'm ${name.value.trim()}.`,
+     plan ? `Plan I'm looking at: ${plan}` : "Plan: still deciding",
+     `I'd train: ${whenTxt}`,
+     phone.value.trim() ? `Phone: ${phone.value.trim()}` : "",
+     msg ? `Note: ${msg}` : "",
+     "— sent from the TGM site"];
+ const fullText = lines.filter(Boolean).join("\n");
+ const directWaUrl = "https://api.whatsapp.com/send?phone=919500441505&text=" + encodeURIComponent(fullText);
+ window.open(directWaUrl, "_blank");
+});
+$$("#joinForm input").forEach(i=> i.addEventListener("input", ()=> i.parentElement.classList.remove("bad")));
+
+/* ── dialogs ──────────────────────────────────────────────────── */
+const open = (d)=>{ d.showModal(); };
+$("#privacyBtn").addEventListener("click", ()=>open($("#dlgPrivacy")));
+$("#termsBtn").addEventListener("click", ()=>open($("#dlgTerms")));
+$$("[data-close]").forEach(b=> b.addEventListener("click", ()=> b.closest("dialog").close()));
+$$("dialog").forEach(d=> d.addEventListener("click", e=>{ if(e.target===d) d.close(); }));
+
+/* ── consent ──────────────────────────────────────────────────── */
+const cbox = $("#consent");
+if(!consent) setTimeout(()=> cbox.classList.add("on"), 1400);
+$("#cAccept").addEventListener("click", ()=>{
+ consent = "yes"; try{ localStorage.setItem("tgm.consent","yes"); }catch(e){}
+ if(!prefs.theme) prefs.theme = document.documentElement.getAttribute("data-theme");
+ persist(); cbox.classList.remove("on");
+});
+$("#cReject").addEventListener("click", ()=>{
+ consent = "no";
+ try{ localStorage.removeItem("tgm.theme"); localStorage.removeItem("tgm.lang"); localStorage.setItem("tgm.consent","no"); }catch(e){}
+ cbox.classList.remove("on");
+});
+$("#cookieBtn").addEventListener("click", ()=>{ cbox.classList.add("on"); cbox.scrollIntoView({block:"nearest"}); });
+
+/* ── scroll behaviour ─────────────────────────────────────────── */
+const hdr = $("#hdr"), fill = $("#railFill"), toTop = $("#toTop");
+let ticking = false;
+function onScroll(){
+ const y = scrollY, h = document.documentElement.scrollHeight - innerHeight;
+ fill.style.width = (h>0 ? (y/h)*100 : 0) + "%";
+ hdr.classList.toggle("stuck", y > 24);
+ toTop.classList.toggle("on", y > 700);
+ if(!RM){
+  const t = $("#tallyBox"), hero = $(".hero h1");
+  if(y < innerHeight){ t.style.transform = `translateY(${y*-0.055}px)`; hero.style.transform = `translateY(${y*0.03}px)`; }
+ }
+ ticking = false;
+}
+addEventListener("scroll", ()=>{ if(!ticking){ ticking = true; requestAnimationFrame(onScroll); } }, {passive:true});
+toTop.addEventListener("click", ()=> scrollTo({top:0, behavior: RM?"auto":"smooth"}));
+
+/* reveal section headings only — one moment per section, nothing more */
+if(!RM){
+ const ro = new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); ro.unobserve(e.target);} }), {threshold:.25});
+ $$(".reveal").forEach(el=>ro.observe(el));
+}else{ $$(".reveal").forEach(el=>el.classList.add("in")); }
+
+/* nav highlight */
+const links = $$("nav.main a");
+const spy = new IntersectionObserver(es=>{
+ es.forEach(e=>{ if(e.isIntersecting){ links.forEach(a=> a.setAttribute("aria-current", String(a.getAttribute("href")==="#"+e.target.id))); } });
+},{rootMargin:"-45% 0px -50% 0px"});
+["floor","kit","coach","plans","visit"].forEach(id=>{ const s=document.getElementById(id); if(s) spy.observe(s); });
+
+/* ── boot ─────────────────────────────────────────────────────── */
+$("#yr").textContent = new Date().getFullYear();
+buildFilters(); renderCards(); renderPlans(); renderHours(); renderStatus(); setWa();
+if(prefs.lang === "ta") applyLang("ta");
+setInterval(renderStatus, 60000);
+
+/* ── dumbbell easter egg ────────────────────────────────────── */
+const logo = $(".logo"), toast = $("#easterToast"), eggBtn = $("#claimEggBtn"), closeEggBtn = $("#closeEggBtn"), timerBar = $("#toastTimerBar");
+let toastTimeout = null;
+
+function dismissToast(){
+ if(toastTimeout) clearTimeout(toastTimeout);
+ if(toast) toast.classList.remove("on");
+}
+
+if(logo && toast){
+ logo.addEventListener("click", (e)=>{
+  e.preventDefault();
+  toast.classList.add("on");
+  if(navigator.vibrate) navigator.vibrate([100,50,100]);
+  
+  if(timerBar){
+   timerBar.style.transition = "none";
+   timerBar.style.width = "100%";
+   requestAnimationFrame(()=>{
+    requestAnimationFrame(()=>{
+     timerBar.style.transition = "width 10s linear";
+     timerBar.style.width = "0%";
+    });
+   });
+  }
+  
+  if(toastTimeout) clearTimeout(toastTimeout);
+  toastTimeout = setTimeout(dismissToast, 10000);
+ });
+ 
+ if(closeEggBtn) closeEggBtn.addEventListener("click", dismissToast);
+ if(eggBtn){
+  eggBtn.addEventListener("click", ()=>{
+   dismissToast();
+   const text = encodeURIComponent("Hi Dinesh, I unlocked the secret Dumbbell Easter Egg code DUMBBELL100! Can I get ₹100 OFF on my plan?");
+   window.open("https://api.whatsapp.com/send?phone=919500441505&text=" + text, "_blank");
+  });
+ }
+}
+
+/* ── options chatbot modal logic ────────────────────────────── */
+const botWin = $("#chatbotWin"), openBotBtn = $("#openChatbotBtn"), closeBotBtn = $("#closeChatbotBtn"), botOpts = $("#botOptions"), botMsgs = $("#botMessages");
+
+if(openBotBtn && botWin){
+ openBotBtn.addEventListener("click", ()=>{
+  botWin.removeAttribute("hidden");
+ });
+}
+if(closeBotBtn && botWin){
+ closeBotBtn.addEventListener("click", ()=>{
+  botWin.setAttribute("hidden", "");
+ });
+}
+
+if(botOpts && botMsgs){
+ botOpts.addEventListener("click", (e)=>{
+  const btn = e.target.closest(".opt-btn");
+  if(!btn) return;
+  const opt = btn.getAttribute("data-opt");
+  const label = btn.textContent.trim();
+  
+  const uMsg = document.createElement("div");
+  uMsg.className = "msg user-msg";
+  uMsg.innerHTML = `<p>${label}</p>`;
+  botMsgs.appendChild(uMsg);
+  
+  const bMsg = document.createElement("div");
+  bMsg.className = "msg bot-msg";
+  
+  if(opt === "timings"){
+   bMsg.innerHTML = `
+    <p><b>🕒 Operating Hours:</b></p>
+    <p>• <b>Monday – Saturday:</b> 5:00 AM – 10:00 PM</p>
+    <p>• <b>Sunday:</b> 5:00 PM – 10:00 PM</p>
+    <p>📍 <b>Location:</b> Singanallur / Vellalore Rd, Coimbatore.</p>
+    <a href="${MAPS}" target="_blank" class="bot-act-btn">📍 Open in Google Maps</a>
+   `;
+  } else if(opt === "plans"){
+   bMsg.innerHTML = `
+    <p><b>💰 TGM Membership Rates:</b></p>
+    <p>• <b>1 Month:</b> ₹2,000</p>
+    <p>• <b>3 Months:</b> ₹5,000</p>
+    <p>• <b>6 Months:</b> ₹7,000</p>
+    <p>• <b>12 Months:</b> ₹10,000 (Best Value! ₹833/mo)</p>
+    <p>✨ <b>Zero Joining Fee!</b></p>
+    <a href="#plans" class="bot-act-btn" onclick="document.getElementById('chatbotWin').setAttribute('hidden','');">💳 View Plan Options</a>
+   `;
+  } else if(opt === "features"){
+   bMsg.innerHTML = `
+    <p><b>🏋️ What's Inside TGM:</b></p>
+    <p>• <b>71 Machines & Tools</b> (Cardio, Cable, Free Weights, Accessories)</p>
+    <p>• <b>Full AC Lifting Floor</b></p>
+    <p>• <b>Open-Air Terrace Studio</b></p>
+    <p>• <b>Live Kitchen:</b> Cook your own post-workout meal on site!</p>
+    <a href="#kit" class="bot-act-btn" onclick="document.getElementById('chatbotWin').setAttribute('hidden','');">🏋️ Browse All 71 Machines</a>
+   `;
+  } else if(opt === "whatsapp"){
+   window.open("https://api.whatsapp.com/send?phone=919500441505&text=Hi%20Dinesh,%20can%20I%20talk%20about%20joining%20TGM?", "_blank");
+   if(botWin) botWin.setAttribute("hidden", "");
+   return;
+  }
+  
+  botMsgs.appendChild(bMsg);
+  botMsgs.scrollTop = botMsgs.scrollHeight;
+ });
+}
+
+/* ── live chat simulator ────────────────────────────────────── */
+const simInput = $("#chatSimInput"), simBtn = $("#chatSimSendBtn"), simUser = $("#chatSimUserBubble");
+if(simInput && simUser){
+ simInput.addEventListener("input", ()=>{
+  simUser.textContent = simInput.value.trim() || "Hi Dinesh, can I talk about this?";
+ });
+ if(simBtn){
+  simBtn.addEventListener("click", ()=>{
+   const text = encodeURIComponent(simInput.value.trim() || "Hi Dinesh, can I talk about this?");
+   window.open("https://api.whatsapp.com/send?phone=919500441505&text=" + text, "_blank");
+  });
+ }
+}
+
+ 
+/* ── dynamic number count-up & reduction animation ────────────────── */
+(function animateCounters(){
+ const strip = $("#statStrip");
+ const els = $$(".strip b[data-count]");
+ if(!els.length || !strip) return;
+
+ function setVal(el, val) {
+  const prefix = el.getAttribute("data-prefix") || "";
+  const hasH = el.querySelector("small");
+  if(hasH){
+   el.childNodes[0].textContent = prefix + val;
+  } else {
+   el.textContent = prefix + val;
+  }
+ }
+
+ if(RM){
+  els.forEach(el=>{
+   const t = parseInt(el.getAttribute("data-count"), 10);
+   setVal(el, isNaN(t) ? 0 : t);
+  });
+  return;
+ }
+
+ let animated = false;
+ function triggerAnimation(){
+  if(animated) return;
+  const rect = strip.getBoundingClientRect();
+  if(rect.top < window.innerHeight * 0.95 && rect.bottom > 0){
+   animated = true;
+   const duration = 1800;
+   const startTime = performance.now();
+   
+   function update(now){
+    const elapsed = now - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const ease = 1 - Math.pow(1 - progress, 3);
+    
+    els.forEach(el => {
+     const start = parseInt(el.getAttribute("data-start") || "0", 10);
+     const target = parseInt(el.getAttribute("data-count"), 10);
+     if(isNaN(target)) return;
+     
+     const current = Math.round(start + (target - start) * ease);
+     setVal(el, current);
+    });
+    
+    if(progress < 1){
+     requestAnimationFrame(update);
+    } else {
+     els.forEach(el => {
+      const target = parseInt(el.getAttribute("data-count"), 10);
+      setVal(el, target);
+      el.classList.add("counted");
+     });
+    }
+   }
+   requestAnimationFrame(update);
+  }
+ }
+
+ addEventListener("scroll", triggerAnimation, {passive:true});
+ triggerAnimation();
+})();
+
+ 
+/* ── scroll reveal observer for cards & plans ───────────────────── */
+ if(!RM){
+  const cardObs = new IntersectionObserver((es)=>{
+   es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); cardObs.unobserve(e.target); } });
+  }, {threshold: 0.1});
+  $$(".card, .plan, .floor article, .visit-grid, .map-wrap, .chat-sim").forEach(el=> cardObs.observe(el));
+ } else {
+  $$(".card, .plan, .floor article, .visit-grid, .map-wrap, .chat-sim").forEach(el=> el.classList.add("in"));
+ }
+
+  
+ /* ── smooth staggered scroll reveal ──────────────────────────────── */
+ (function setupScrollReveal(){
+  const items = $$(".reveal, .reveal-item");
+  if(!items.length) return;
+ if(RM){
+  items.forEach(el=> el.classList.add("in"));
+  return;
+ }
+ const obs = new IntersectionObserver((entries)=>{
+  entries.forEach((e, idx)=>{
+   if(e.isIntersecting){
+    setTimeout(()=>{
+     e.target.classList.add("in");
+    }, (idx % 4) * 80);
+    obs.unobserve(e.target);
+   }
+  });
+ }, {threshold: 0.12, rootMargin: "0px 0px -40px 0px"});
+ 
+ items.forEach(el=> obs.observe(el));
+})();
+
+ onScroll();
+})();
+</script>
+</body>
+</html>

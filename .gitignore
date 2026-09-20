@@ -1,0 +1,15 @@
+# Ignore temporary, PDF, and scratch files
+*.pdf
+pdf_extracted.txt
+pdf_page_renders/
+pdf_pages/
+equipments_pdf_exact/
+index (1).html
+index3.html
+infinityfit_scraped_urls.json
+equipment.md
+gym info.md
+updated info.md
+TGM_MASTER_BLUEPRINT.md
+.DS_Store
+Thumbs.db
