@@ -4,7 +4,7 @@
     "name": "Treadmill",
     "category": "Cardio",
     "description": "Motorized high-performance cardio treadmill with live telemetry monitoring.",
-    "image": "equipments/eq_1.png",
+    "image": "equipments_pdf_exact/eq_1.png",
     "fallback_image": "https://images.unsplash.com/photo-1576678927484-cc909957088c?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/05-09-2025_01-02-40IF7002el..png"
@@ -14,7 +14,7 @@
     "name": "Stair Climber",
     "category": "Cardio",
     "description": "Heavy-duty revolving staircase for intense aerobic conditioning.",
-    "image": "equipments/eq_2.png",
+    "image": "equipments_pdf_exact/eq_2.png",
     "fallback_image": "https://images.unsplash.com/photo-1576678927484-cc909957088c?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2026_05-41-16NL113ASSCHINUP.png"
@@ -24,7 +24,7 @@
     "name": "Spin Bike",
     "category": "Cardio",
     "description": "Precision flywheel magnetic spin bike for high-calorie endurance rides.",
-    "image": "equipments/eq_3.png",
+    "image": "equipments_pdf_exact/eq_3.png",
     "fallback_image": "https://images.unsplash.com/photo-1576678927484-cc909957088c?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2025_12-22-35cl4.png"
@@ -34,7 +34,7 @@
     "name": "Lat Pulldown / Seated Row",
     "category": "Pin Loaded",
     "description": "Dual-function back strength station with biomechanical cable path.",
-    "image": "equipments/eq_4.png",
+    "image": "equipments_pdf_exact/eq_4.png",
     "fallback_image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2026_05-33-05NL110LAT.png"
@@ -44,7 +44,7 @@
     "name": "Pec Fly / Rear Delt",
     "category": "Pin Loaded",
     "description": "Dual-overhead arm station targeting pectoral and posterior deltoid muscles.",
-    "image": "equipments/eq_5.png",
+    "image": "equipments_pdf_exact/eq_5.png",
     "fallback_image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/15-09-2026_12-07-34NewProject-2026-09-15T120554.138.png"
@@ -54,7 +54,7 @@
     "name": "Multi-Press",
     "category": "Pin Loaded",
     "description": "Adjustable pressing station for chest, incline press, and shoulder press.",
-    "image": "equipments/eq_6.png",
+    "image": "equipments_pdf_exact/eq_6.png",
     "fallback_image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2026_06-02-59NL116MULTIPRESS(1).png"
@@ -64,7 +64,7 @@
     "name": "Leg Curl / Leg Extension",
     "category": "Pin Loaded",
     "description": "Dual leg workstation targeting quadriceps isolation and hamstring development.",
-    "image": "equipments/eq_7.png",
+    "image": "equipments_pdf_exact/eq_7.png",
     "fallback_image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2026_05-37-54NL112LEGCURL.png"
@@ -74,7 +74,7 @@
     "name": "Adductor / Abductor",
     "category": "Pin Loaded",
     "description": "Inner and outer thigh hip isolation pin-loaded machine.",
-    "image": "equipments/eq_8.png",
+    "image": "equipments_pdf_exact/eq_8.png",
     "fallback_image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2026_05-44-13NL114ABDUCTOR.png"
@@ -84,7 +84,7 @@
     "name": "Bicep Curl \u2013 Version 1",
     "category": "Pin Loaded",
     "description": "Seated preacher-style isolateral arm curl station.",
-    "image": "equipments/eq_9.png",
+    "image": "equipments_pdf_exact/eq_9.png",
     "fallback_image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2026_05-37-54NL112LEGCURL.png"
@@ -94,7 +94,7 @@
     "name": "Bicep Curl \u2013 Version 2",
     "category": "Pin Loaded",
     "description": "Standing/seated dual grip cable bicep isolation unit.",
-    "image": "equipments/eq_10.png",
+    "image": "equipments_pdf_exact/eq_10.png",
     "fallback_image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2026_05-37-54NL112LEGCURL.png"
@@ -104,7 +104,7 @@
     "name": "Lateral Trainer",
     "category": "Cardio",
     "description": "3D movement elliptical targeting glutes, quads, and lateral agility.",
-    "image": "equipments/eq_11.png",
+    "image": "equipments_pdf_exact/eq_11.png",
     "fallback_image": "https://images.unsplash.com/photo-1576678927484-cc909957088c?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/05-09-2025_01-02-40IF7002el..png"
@@ -114,7 +114,7 @@
     "name": "Metro",
     "category": "Cardio",
     "description": "Low-impact smooth glide elliptical trainer.",
-    "image": "equipments/eq_12.png",
+    "image": "equipments_pdf_exact/eq_12.png",
     "fallback_image": "https://images.unsplash.com/photo-1576678927484-cc909957088c?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/05-09-2025_01-02-40IF7002el..png"
@@ -124,7 +124,7 @@
     "name": "Blowero",
     "category": "Cardio",
     "description": "High-airflow air bike for progressive HIIT workouts.",
-    "image": "equipments/eq_13.png",
+    "image": "equipments_pdf_exact/eq_13.png",
     "fallback_image": "https://images.unsplash.com/photo-1576678927484-cc909957088c?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/05-09-2025_05-29-012030(2).png"
@@ -134,7 +134,7 @@
     "name": "Seated Tricep Dip",
     "category": "Pin Loaded",
     "description": "Preacher-style seated press-down tricep isolation station.",
-    "image": "equipments/eq_14.png",
+    "image": "equipments_pdf_exact/eq_14.png",
     "fallback_image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/05-09-2025_01-02-40IF7002el..png"
@@ -144,7 +144,7 @@
     "name": "Circular Lat Pulldown",
     "category": "Plate Loaded",
     "description": "Converging axis wide lat pulldown unit for back width.",
-    "image": "equipments/eq_15.png",
+    "image": "equipments_pdf_exact/eq_15.png",
     "fallback_image": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2026_05-33-05NL110LAT.png"
@@ -154,7 +154,7 @@
     "name": "Vertical Knee Raise",
     "category": "Racks & Benches",
     "description": "Bodyweight core station for leg raises, pull-ups, and dips.",
-    "image": "equipments/eq_16.png",
+    "image": "equipments_pdf_exact/eq_16.png",
     "fallback_image": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/03-06-2026_12-15-08PL-107.png"
@@ -164,7 +164,7 @@
     "name": "Wrist Curl",
     "category": "Accessories",
     "description": "Forearm and wrist flexor isolation bench system.",
-    "image": "equipments/eq_17.png",
+    "image": "equipments_pdf_exact/eq_17.png",
     "fallback_image": "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2026_05-37-54NL112LEGCURL.png"
@@ -174,7 +174,7 @@
     "name": "Hack Squat",
     "category": "Plate Loaded",
     "description": "45-degree heavy linear hack squat station for quad hyper-drive.",
-    "image": "equipments/eq_18.png",
+    "image": "equipments_pdf_exact/eq_18.png",
     "fallback_image": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/25-09-2025_04-09-01NewProject(55).png"
@@ -184,7 +184,7 @@
     "name": "Standing Shoulder Press",
     "category": "Plate Loaded",
     "description": "Isolateral standing overhead press machine.",
-    "image": "equipments/eq_19.png",
+    "image": "equipments_pdf_exact/eq_19.png",
     "fallback_image": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2026_06-02-59NL116MULTIPRESS(1).png"
@@ -194,7 +194,7 @@
     "name": "Smith Row",
     "category": "Plate Loaded",
     "description": "Guided barbell bent-over row and shrug machine.",
-    "image": "equipments/eq_20.png",
+    "image": "equipments_pdf_exact/eq_20.png",
     "fallback_image": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2026_05-33-05NL110LAT.png"
@@ -204,7 +204,7 @@
     "name": "Hip Thrust",
     "category": "Plate Loaded",
     "description": "Dedicated glute bridge hip thrust station with padded hip belt.",
-    "image": "equipments/eq_21.png",
+    "image": "equipments_pdf_exact/eq_21.png",
     "fallback_image": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2025_12-20-48cl2.png"
@@ -214,7 +214,7 @@
     "name": "Ab Coaster",
     "category": "Functional",
     "description": "Curved track lower ab slider system for core sculpting.",
-    "image": "equipments/eq_22.png",
+    "image": "equipments_pdf_exact/eq_22.png",
     "fallback_image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/25-09-2025_05-08-35NewProject(64).png"
@@ -224,7 +224,7 @@
     "name": "Leg Press",
     "category": "Plate Loaded",
     "description": "Heavy duty 45-degree linear leg press with 500kg capacity.",
-    "image": "equipments/eq_23.png",
+    "image": "equipments_pdf_exact/eq_23.png",
     "fallback_image": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2026_06-02-59NL116MULTIPRESS(1).png"
@@ -234,7 +234,7 @@
     "name": "Cable Crossovers",
     "category": "Pin Loaded",
     "description": "Multi-angle dual adjustable pulley functional trainer tower.",
-    "image": "equipments/eq_24.png",
+    "image": "equipments_pdf_exact/eq_24.png",
     "fallback_image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/10-04-2026_01-11-38NewProject-2026-04-10T130757.610.png"
@@ -244,7 +244,7 @@
     "name": "Smith Machine / Squat Rack",
     "category": "Racks & Benches",
     "description": "Commercial power rack integrated with linear bearing Smith machine.",
-    "image": "equipments/eq_25.png",
+    "image": "equipments_pdf_exact/eq_25.png",
     "fallback_image": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2026_06-11-20SMITH(2).png"
@@ -254,7 +254,7 @@
     "name": "Dumbbell Rack",
     "category": "Racks & Benches",
     "description": "3-tier heavy gauge steel dumbbell storage rack.",
-    "image": "equipments/eq_26.png",
+    "image": "equipments_pdf_exact/eq_26.png",
     "fallback_image": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2026_06-11-20SMITH(2).png"
@@ -264,7 +264,7 @@
     "name": "Olympic Flat Bench",
     "category": "Racks & Benches",
     "description": "Competition-standard flat bench with spotter platform and rod catches.",
-    "image": "equipments/eq_27.png",
+    "image": "equipments_pdf_exact/eq_27.png",
     "fallback_image": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2026_05-33-05NL110LAT.png"
@@ -274,7 +274,7 @@
     "name": "Olympic Incline Bench",
     "category": "Racks & Benches",
     "description": "30-degree incline chest bench with integrated plate storage pins.",
-    "image": "equipments/eq_28.png",
+    "image": "equipments_pdf_exact/eq_28.png",
     "fallback_image": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/10-04-2026_03-49-01L125.png"
@@ -284,7 +284,7 @@
     "name": "Olympic Decline Bench",
     "category": "Racks & Benches",
     "description": "Decline chest press bench with leg locking pads.",
-    "image": "equipments/eq_29.png",
+    "image": "equipments_pdf_exact/eq_29.png",
     "fallback_image": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-11-2025_11-40-40NewProject-2025-11-12T113633.995.png"
@@ -294,7 +294,7 @@
     "name": "Hyperextension",
     "category": "Racks & Benches",
     "description": "45-degree back extension bench for glute and lumbar strength.",
-    "image": "equipments/eq_30.png",
+    "image": "equipments_pdf_exact/eq_30.png",
     "fallback_image": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2026_05-37-54NL112LEGCURL.png"
@@ -304,7 +304,7 @@
     "name": "Belt Squat",
     "category": "Plate Loaded",
     "description": "De-loaded spine squat station transferring load directly to hips.",
-    "image": "equipments/eq_31.png",
+    "image": "equipments_pdf_exact/eq_31.png",
     "fallback_image": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/03-06-2026_12-20-30PL-109.png"
@@ -314,7 +314,7 @@
     "name": "Fit Bench",
     "category": "Racks & Benches",
     "description": "Multi-angle compact training bench with dumbbell slots.",
-    "image": "equipments/eq_32.png",
+    "image": "equipments_pdf_exact/eq_32.png",
     "fallback_image": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/13-09-2025_09-42-34f25.png"
@@ -324,7 +324,7 @@
     "name": "Flat Bench",
     "category": "Racks & Benches",
     "description": "High-density foam utility flat bench for free weight training.",
-    "image": "equipments/eq_33.png",
+    "image": "equipments_pdf_exact/eq_33.png",
     "fallback_image": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2026_05-33-05NL110LAT.png"
@@ -334,7 +334,7 @@
     "name": "Utility Stool",
     "category": "Racks & Benches",
     "description": "90-degree upright seating stool for shoulder and arm presses.",
-    "image": "equipments/eq_34.png",
+    "image": "equipments_pdf_exact/eq_34.png",
     "fallback_image": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2026_06-02-59NL116MULTIPRESS(1).png"
@@ -344,7 +344,7 @@
     "name": "Seated Calf Raise",
     "category": "Plate Loaded",
     "description": "Soleus isolation seated calf press with comfortable thigh pads.",
-    "image": "equipments/eq_35.png",
+    "image": "equipments_pdf_exact/eq_35.png",
     "fallback_image": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/25-09-2025_05-49-52NewProject(78).png"
@@ -354,7 +354,7 @@
     "name": "Fixed Barbells",
     "category": "Free Weights",
     "description": "Set of pre-weighted straight and EZ barbells from 10kg to 45kg.",
-    "image": "equipments/eq_36.png",
+    "image": "equipments_pdf_exact/eq_36.png",
     "fallback_image": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/27-09-2025_05-37-09if118NN...png"
@@ -364,7 +364,7 @@
     "name": "Straight Bar",
     "category": "Free Weights",
     "description": "Solid steel chrome straight bar for fixed barbell rack.",
-    "image": "equipments/eq_37.png",
+    "image": "equipments_pdf_exact/eq_37.png",
     "fallback_image": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/05-09-2025_01-02-40IF7002el..png"
@@ -374,7 +374,7 @@
     "name": "Curl Bar",
     "category": "Free Weights",
     "description": "Ergonomic EZ cambered fixed barbell for wrist safety.",
-    "image": "equipments/eq_38.png",
+    "image": "equipments_pdf_exact/eq_38.png",
     "fallback_image": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2026_05-37-54NL112LEGCURL.png"
@@ -384,7 +384,7 @@
     "name": "Fixed Barbell Rack",
     "category": "Racks & Benches",
     "description": "Vertical dual-sided storage rack for pre-weighted barbells.",
-    "image": "equipments/eq_39.png",
+    "image": "equipments_pdf_exact/eq_39.png",
     "fallback_image": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2026_06-11-20SMITH(2).png"
@@ -394,7 +394,7 @@
     "name": "Plate Tree",
     "category": "Racks & Benches",
     "description": "A-frame Olympic bumper and iron weight plate tree organizer.",
-    "image": "equipments/eq_40.png",
+    "image": "equipments_pdf_exact/eq_40.png",
     "fallback_image": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/05-09-2025_01-02-40IF7002el..png"
@@ -404,7 +404,7 @@
     "name": "AB Board",
     "category": "Functional",
     "description": "Decline adjustable abdominal bench for weighted sit-ups.",
-    "image": "equipments/eq_41.png",
+    "image": "equipments_pdf_exact/eq_41.png",
     "fallback_image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/03-06-2026_12-57-35HMPL05.png"
@@ -414,7 +414,7 @@
     "name": "TPR Dumbbells",
     "category": "Free Weights",
     "description": "Thermoplastic rubber heavy-duty hex dumbbells set (2.5kg to 50kg).",
-    "image": "equipments/eq_42.png",
+    "image": "equipments_pdf_exact/eq_42.png",
     "fallback_image": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/25-09-2025_06-08-32TPRDumbbells.png"
@@ -424,7 +424,7 @@
     "name": "TPR Plates",
     "category": "Free Weights",
     "description": "Tri-grip rubber encased precision weight plates.",
-    "image": "equipments/eq_43.png",
+    "image": "equipments_pdf_exact/eq_43.png",
     "fallback_image": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2026_05-33-05NL110LAT.png"
@@ -434,7 +434,7 @@
     "name": "Olympic 7-Foot Rod",
     "category": "Free Weights",
     "description": "20kg 700lb test chrome Olympic barbell with knurling.",
-    "image": "equipments/eq_44.png",
+    "image": "equipments_pdf_exact/eq_44.png",
     "fallback_image": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/27-09-2025_05-37-09if118NN...png"
@@ -444,7 +444,7 @@
     "name": "Olympic 4-Foot Rod",
     "category": "Free Weights",
     "description": "Compact 4-foot straight Olympic bar for arm workouts.",
-    "image": "equipments/eq_45.png",
+    "image": "equipments_pdf_exact/eq_45.png",
     "fallback_image": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/27-09-2025_05-37-09if118NN...png"
@@ -454,7 +454,7 @@
     "name": "Olympic EZ 4-Foot Rod",
     "category": "Free Weights",
     "description": "Cambered 4-foot EZ bar for bicep and tricep extension movements.",
-    "image": "equipments/eq_46.png",
+    "image": "equipments_pdf_exact/eq_46.png",
     "fallback_image": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/27-09-2025_05-37-09if118NN...png"
@@ -464,7 +464,7 @@
     "name": "Lock",
     "category": "Accessories",
     "description": "Quick-release aluminum barbell collar clamps.",
-    "image": "equipments/eq_47.png",
+    "image": "equipments_pdf_exact/eq_47.png",
     "fallback_image": "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/07-01-2026_07-13-21if370.png"
@@ -474,7 +474,7 @@
     "name": "Tricep Rope",
     "category": "Accessories",
     "description": "Heavy braided nylon rope attachment with rubber stoppers.",
-    "image": "equipments/eq_48.png",
+    "image": "equipments_pdf_exact/eq_48.png",
     "fallback_image": "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/05-09-2025_01-02-40IF7002el..png"
@@ -484,7 +484,7 @@
     "name": "Rod Holder",
     "category": "Racks & Benches",
     "description": "Vertical storage tube rack for 5 Olympic barbells.",
-    "image": "equipments/eq_49.png",
+    "image": "equipments_pdf_exact/eq_49.png",
     "fallback_image": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/27-09-2025_05-37-09if118NN...png"
@@ -494,7 +494,7 @@
     "name": "CC Squat",
     "category": "Functional",
     "description": "Sissy squat bench for quad isolation and knee stability.",
-    "image": "equipments/eq_50.png",
+    "image": "equipments_pdf_exact/eq_50.png",
     "fallback_image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/25-09-2025_05-42-23sample1.png"
@@ -504,7 +504,7 @@
     "name": "Push Bar",
     "category": "Functional",
     "description": "Parallette push-up bars for deep chest stretch and dips.",
-    "image": "equipments/eq_51.png",
+    "image": "equipments_pdf_exact/eq_51.png",
     "fallback_image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/27-09-2025_05-37-09if118NN...png"
@@ -514,7 +514,7 @@
     "name": "Leg Weight",
     "category": "Accessories",
     "description": "Adjustable ankle weights for resistance cardio and rehab.",
-    "image": "equipments/eq_52.png",
+    "image": "equipments_pdf_exact/eq_52.png",
     "fallback_image": "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2026_05-37-54NL112LEGCURL.png"
@@ -524,7 +524,7 @@
     "name": "Gym Ball",
     "category": "Functional",
     "description": "Anti-burst Swiss exercise ball for core balance training.",
-    "image": "equipments/eq_53.png",
+    "image": "equipments_pdf_exact/eq_53.png",
     "fallback_image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/13-09-2025_09-35-57fl13.png"
@@ -534,7 +534,7 @@
     "name": "Medicine Ball",
     "category": "Functional",
     "description": "Dual-handle rubber medicine balls for explosive core work.",
-    "image": "equipments/eq_54.png",
+    "image": "equipments_pdf_exact/eq_54.png",
     "fallback_image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/11-06-2026_04-37-38NewProject-2026-06-11T163653.402.png"
@@ -544,7 +544,7 @@
     "name": "Wrist Forearm Blaster",
     "category": "Accessories",
     "description": "Roller wrist wrist blaster with weight plate peg.",
-    "image": "equipments/eq_55.png",
+    "image": "equipments_pdf_exact/eq_55.png",
     "fallback_image": "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2026_05-37-54NL112LEGCURL.png"
@@ -554,7 +554,7 @@
     "name": "Extreme Aerobic Stepper",
     "category": "Functional",
     "description": "Non-slip adjustable height fitness stepper platform.",
-    "image": "equipments/eq_56.png",
+    "image": "equipments_pdf_exact/eq_56.png",
     "fallback_image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/05-09-2025_01-02-40IF7002el..png"
@@ -564,7 +564,7 @@
     "name": "Shoulder Back Support",
     "category": "Accessories",
     "description": "Posture corrector and spinal alignment harness for heavy lifting.",
-    "image": "equipments/eq_57.png",
+    "image": "equipments_pdf_exact/eq_57.png",
     "fallback_image": "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/18-09-2026_05-35-52IR14(2).png"
@@ -574,7 +574,7 @@
     "name": "Slam Ball",
     "category": "Functional",
     "description": "Heavy textured non-bounce slam balls for conditioning.",
-    "image": "equipments/eq_58.png",
+    "image": "equipments_pdf_exact/eq_58.png",
     "fallback_image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/25-09-2025_05-30-17NewProject(74).png"
@@ -584,7 +584,7 @@
     "name": "Nirvana Yoga Mat",
     "category": "Functional",
     "description": "High-density TPE anti-tear non-slip yoga and mobility mat.",
-    "image": "equipments/eq_59.png",
+    "image": "equipments_pdf_exact/eq_59.png",
     "fallback_image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/08-09-2025_10-07-1650505.png"
@@ -594,7 +594,7 @@
     "name": "Nebula Ladder",
     "category": "Functional",
     "description": "Speed and agility footwork ladder for athletic drills.",
-    "image": "equipments/eq_60.png",
+    "image": "equipments_pdf_exact/eq_60.png",
     "fallback_image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/27-09-2025_02-33-50if500..png"
@@ -604,7 +604,7 @@
     "name": "Vinyl Kettlebell \u2013 10 kg",
     "category": "Free Weights",
     "description": "10kg vinyl coated cast iron kettlebell.",
-    "image": "equipments/eq_61.png",
+    "image": "equipments_pdf_exact/eq_61.png",
     "fallback_image": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/25-09-2025_05-15-54NewProject(66).png"
@@ -614,7 +614,7 @@
     "name": "Vinyl Kettlebell \u2013 20 kg",
     "category": "Free Weights",
     "description": "20kg heavy vinyl coated kettlebell for swings and Turkish get-ups.",
-    "image": "equipments/eq_62.png",
+    "image": "equipments_pdf_exact/eq_62.png",
     "fallback_image": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/24-09-2025_06-02-32NewProject(38).png"
@@ -624,7 +624,7 @@
     "name": "Foam Roller",
     "category": "Functional",
     "description": "High-density EVA foam roller for myofascial release and recovery.",
-    "image": "equipments/eq_63.png",
+    "image": "equipments_pdf_exact/eq_63.png",
     "fallback_image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/13-09-2025_09-29-23fl07.png"
@@ -634,7 +634,7 @@
     "name": "BOSU Ball",
     "category": "Functional",
     "description": "Half-dome balance trainer with resistance bands.",
-    "image": "equipments/eq_64.png",
+    "image": "equipments_pdf_exact/eq_64.png",
     "fallback_image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2025_01-37-16NewProject(70).png"
@@ -644,7 +644,7 @@
     "name": "Jumping Rope",
     "category": "Functional",
     "description": "High-speed ball bearing steel wire speed jump rope.",
-    "image": "equipments/eq_65.png",
+    "image": "equipments_pdf_exact/eq_65.png",
     "fallback_image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/03-06-2026_12-17-04PL-108.png"
@@ -654,7 +654,7 @@
     "name": "AB Wheel Roller",
     "category": "Functional",
     "description": "Dual-wheel core ab roller with knee pad.",
-    "image": "equipments/eq_66.png",
+    "image": "equipments_pdf_exact/eq_66.png",
     "fallback_image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2025_11-13-09e130.png"
@@ -664,7 +664,7 @@
     "name": "Rubber Band",
     "category": "Functional",
     "description": "Set of heavy resistance loop bands for mobility and pull-up assistance.",
-    "image": "equipments/eq_67.png",
+    "image": "equipments_pdf_exact/eq_67.png",
     "fallback_image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/12-09-2025_12-45-26cl10.png"
@@ -674,7 +674,7 @@
     "name": "Knee Wrap",
     "category": "Accessories",
     "description": "72-inch elastic knee compression wraps for heavy squats.",
-    "image": "equipments/eq_68.png",
+    "image": "equipments_pdf_exact/eq_68.png",
     "fallback_image": "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/22-09-2025_10-56-4536.png"
@@ -684,7 +684,7 @@
     "name": "Wrist Strap",
     "category": "Accessories",
     "description": "Heavy-duty cotton lifting straps for deadlifts and rows.",
-    "image": "equipments/eq_69.png",
+    "image": "equipments_pdf_exact/eq_69.png",
     "fallback_image": "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/05-09-2025_01-02-40IF7002el..png"
@@ -694,7 +694,7 @@
     "name": "Weightlifting Weight Bag",
     "category": "Functional",
     "description": "Sand-filled heavy power bag with multi-handles.",
-    "image": "equipments/eq_70.png",
+    "image": "equipments_pdf_exact/eq_70.png",
     "fallback_image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/25-09-2025_06-10-13TPRweightplates.png"
@@ -704,7 +704,7 @@
     "name": "Fitness Tube",
     "category": "Functional",
     "description": "Resistance exercise tube with cushioned foam handles.",
-    "image": "equipments/eq_71.png",
+    "image": "equipments_pdf_exact/eq_71.png",
     "fallback_image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
     "brand": "Infinity Fit / TGM Commercial",
     "source_url": "https://www.infinityfit.in/uploads/product-images/04-09-2025_02-50-00u04(1).png"
