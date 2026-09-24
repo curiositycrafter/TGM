@@ -1,0 +1,8 @@
+# Robots.txt for The Gym Moments (TGM) - Coimbatore
+# Allows all search engine web crawlers (Googlebot, Bingbot, etc.) full access to index the site
+
+User-agent: *
+Allow: /
+
+# XML Sitemap Location for Google Search Console & Indexing Crawlers
+Sitemap: https://curiositycrafter.github.io/TGM/sitemap.xml
