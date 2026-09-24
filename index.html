@@ -590,6 +590,30 @@ footer{padding:clamp(2.2rem,4.5vw,3.2rem) 0 clamp(4.8rem,9vh,6.5rem)}
 .opt-btn{font:inherit;font-size:.8rem;font-weight:700;padding:.55rem .8rem;border-radius:10px;border:1px solid var(--hair);background:transparent;color:var(--ink);cursor:pointer;text-align:left;transition:all .2s;display:flex;align-items:center;gap:.45rem}
 .opt-btn:hover{background:var(--kum-soft);border-color:var(--kum);color:var(--kum);transform:translateX(3px)}
 
+/* ── Live Kitchen & Nutrition Showcase ───────────────────────────── */
+.kitchen-showcase{margin-top:2.5rem;padding:2rem;background:var(--card);border:1px solid var(--hair-2);border-radius:24px;box-shadow:var(--shadow)}
+.kitchen-showcase-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:2rem;align-items:start}
+@media(max-width:850px){.kitchen-showcase-grid{grid-template-columns:1fr}}
+
+.board-container{position:relative;border-radius:18px;overflow:hidden;border:2px solid var(--hair);background:#000}
+.board-container img{width:100%;height:auto;display:block;object-fit:cover;transition:transform .4s ease}
+.board-container:hover img{transform:scale(1.03)}
+.board-tag{position:absolute;top:14px;left:14px;background:rgba(0,0,0,0.85);color:#F3C63F;backdrop-filter:blur(8px);font-size:.78rem;font-weight:800;padding:.4rem .8rem;border-radius:99px;border:1px solid rgba(243,198,63,0.4);display:inline-flex;align-items:center;gap:.4rem;z-index:2}
+
+.food-cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:1rem;margin-bottom:1.2rem}
+.food-card{background:var(--paper);border:1px solid var(--hair-2);border-radius:16px;overflow:hidden;transition:transform .25s,border-color .25s,box-shadow .25s;display:flex;flex-direction:column}
+.food-card:hover{transform:translateY(-4px);border-color:var(--kum);box-shadow:0 8px 24px rgba(0,0,0,0.15)}
+.food-card .food-img{aspect-ratio:4/3;width:100%;overflow:hidden;background:#000;position:relative}
+.food-card .food-img img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.food-card:hover .food-img img{transform:scale(1.08)}
+.food-info{padding:.8rem .9rem;display:flex;flex-direction:column;gap:.2rem;flex:1}
+.food-title{font-weight:800;font-size:.86rem;color:var(--ink);line-height:1.2}
+.food-price{font-size:1rem;font-weight:900;color:#25D366;margin-top:auto;display:flex;align-items:center;justify-content:space-between}
+
+.menu-list-items{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.6rem;background:var(--paper);padding:1rem;border-radius:16px;border:1px solid var(--hair-2)}
+.menu-item-row{display:flex;justify-content:space-between;align-items:center;padding:.45rem .6rem;background:var(--card);border-radius:10px;font-size:.82rem;font-weight:700}
+.menu-item-row .price-badge{background:var(--kum-soft);color:var(--kum);padding:.2rem .5rem;border-radius:6px;font-weight:900;font-size:.8rem}
+
 </style>
 </head>
 <body>
@@ -663,7 +687,7 @@ footer{padding:clamp(2.2rem,4.5vw,3.2rem) 0 clamp(4.8rem,9vh,6.5rem)}
   <div>
    <h1 class="hero-brand">THE GYM MOMENTS</h1>
    <p class="hero-sub"><span class="num" id="heroCount">46</span> <span data-en="members train here right now. There's room for you." data-ta="members inga thookuraanga. Unakkum idam iruku bossuh!">members train here right now. There's room for you.</span></p>
-   <p class="lede" data-en="The Gym Moments, Coimbatore. 71 machines, full AC, an open-air terrace, and a kitchen where you cook your own post-workout meal." data-ta="The Gym Moments, Coimbatore. 71 Infinity Fit machines, Full AC, open terrace, appuram workout mudinjadhum mutta vechu samaikkira Live Kitchen pappa!">The Gym Moments, Coimbatore. 71 machines, full AC, an open-air terrace, and a kitchen where you cook your own post-workout meal.</p>
+   <p class="lede" data-en="The Gym Moments, Coimbatore. 71 machines, full AC (extra charges apply), an open-air terrace, and a live kitchen where fresh post-workout meals are prepared for you." data-ta="The Gym Moments, Coimbatore. 71 Infinity Fit machines, Full AC (thani charges undu), open terrace, appuram workout mudinjadhum pusu pusaah samaichu tharura Live Kitchen pappa!">The Gym Moments, Coimbatore. 71 machines, full AC (extra charges apply), an open-air terrace, and a live kitchen where fresh post-workout meals are prepared for you.</p>
    <div class="cta">
     <a class="btn" id="heroWa" href="https://api.whatsapp.com/send?phone=919500441505&text=Hi%20Dinesh,%20can%20I%20talk%20about%20joining%20TGM?" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span data-en="WhatsApp Chat" data-ta="WhatsApp Chat">WhatsApp Chat</span></a>
      <a class="btn ghost" href="tel:+919500441505"><svg aria-hidden="true"><use href="#i-phone"/></svg><span data-en="Call" data-ta="Call">Call</span></a>
@@ -696,7 +720,7 @@ footer{padding:clamp(2.2rem,4.5vw,3.2rem) 0 clamp(4.8rem,9vh,6.5rem)}
    <p class="tag" data-en="the floor" data-ta="floor">the floor</p>
    <div>
     <h2 data-en="Four things you won't find in the gym down the road." data-ta="Adutha theru gym-la kidaikkaadha naalu vishayam.">Four things you won't find in the gym down the road.</h2>
-    <p data-en="We built the place we wanted to train in: cool air, quiet reps, sky overhead when you stretch, and real food at the end of it." data-ta="Naanga train panna virumbura maadhiriye katti irukom — AC kaathu, amaidhiyaana reps, stretch pannumbodhu vaanam, mudivula nejamaana saapadu.">We built the place we wanted to train in: cool air, quiet reps, sky overhead when you stretch, and real food at the end of it.</p>
+    <p data-en="We built the place we wanted to train in: cool air, quiet reps, sky overhead when you stretch, and real food prepared for you at the end of it." data-ta="Naanga train panna virumbura maadhiriye katti irukom — AC kaathu, amaidhiyaana reps, stretch pannumbodhu vaanam, mudivula pusu pusaah samaichu tharura saapadu.">We built the place we wanted to train in: cool air, quiet reps, sky overhead when you stretch, and real food prepared for you at the end of it.</p>
    </div>
   </div>
   <div class="floor">
@@ -707,16 +731,16 @@ footer{padding:clamp(2.2rem,4.5vw,3.2rem) 0 clamp(4.8rem,9vh,6.5rem)}
       <path class="steam" d="M40 46c0-7 7-7 7-14s-7-7-7-14"/><path class="steam s2" d="M58 44c0-7 7-7 7-14s-7-7-7-14"/><path class="steam s3" d="M76 46c0-7 7-7 7-14s-7-7-7-14"/>
     </svg></div>
     <span class="first" data-en="first in Coimbatore" data-ta="Coimbatore-la mudhalmurai">first in Coimbatore</span>
-    <h3 data-en="A kitchen you actually cook in" data-ta="Neenga-e samaikkira kitchen">A kitchen you actually cook in</h3>
-    <p data-en="Not a counter selling shakes. A live kitchen with a stove and a sink, so the egg you eat after your set is the one you cracked." data-ta="Shake vikkira counter illa — stove, sink ellaam irukkura live kitchen. Set mudichadhum neenga-e mutta udachi saapdunga.">Not a counter selling shakes. A live kitchen with a stove and a sink, so the egg you eat after your set is the one you cracked.</p>
+    <h3 data-en="Fresh post-workout meals cooked for you" data-ta="Unga kaaga samaichu tharura Live Kitchen">Fresh post-workout meals cooked for you</h3>
+    <p data-en="Not a counter selling synthetic supplements. A live in-gym kitchen where fresh healthy meals, salads, fruit cups, juices, and eggs are prepared for you right after your workout." data-ta="Shake vikkira counter illa — fresh healthy food, salads, juices, boiled eggs ellaam unga workout mudinjadhum ungalukkaaga pusu pusaah samaichu tharuvom.">Not a counter selling synthetic supplements. A live in-gym kitchen where fresh healthy meals, salads, fruit cups, juices, and eggs are prepared for you right after your workout.</p>
    </article>
    <article>
     <div class="art"><svg viewBox="0 0 120 96" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
       <rect x="18" y="16" width="84" height="34" rx="7"/><path d="M28 26h64M28 34h44"/>
       <path d="M32 58c0 8 8 8 8 16M56 58c0 8 8 8 8 16M80 58c0 8 8 8 8 16"/>
     </svg></div>
-    <h3 data-en="Full AC, all 17 hours" data-ta="17 mani neramum full AC">Full AC, all 17 hours</h3>
-    <p data-en="Coimbatore heat stays outside. The lifting floor is climate-controlled from the 5am opening to the last rep at 10pm." data-ta="Coimbatore veyil veliye-thaan. Kaalai 5 mudhal iravu 10 varai floor full AC-la irukkum.">Coimbatore heat stays outside. The lifting floor is climate-controlled from the 5am opening to the last rep at 10pm.</p>
+    <h3 data-en="Full AC, all 17 hours (Extra charges apply)" data-ta="17 mani neramum full AC (Thani charges undu)">Full AC, all 17 hours (Extra charges apply)</h3>
+    <p data-en="Coimbatore heat stays outside. The lifting floor is climate-controlled from the 5am opening to the last rep at 10pm. (Extra charges apply for AC usage)." data-ta="Coimbatore veyil veliye-thaan. Kaalai 5 mudhal iravu 10 varai floor full AC-la irukkum. (AC-kku thani charges undu).">Coimbatore heat stays outside. The lifting floor is climate-controlled from the 5am opening to the last rep at 10pm. (Extra charges apply for AC usage).</p>
    </article>
    <article>
     <div class="art"><svg viewBox="0 0 120 96" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -734,6 +758,92 @@ footer{padding:clamp(2.2rem,4.5vw,3.2rem) 0 clamp(4.8rem,9vh,6.5rem)}
     <h3 data-en="No blasting speakers" data-ta="Speaker-la kaduppu paadal illa">No blasting speakers</h3>
     <p data-en="No one else picks your playlist. Bring headphones, bring your phone if you need it — just don't spend forty minutes on reels and call it a session." data-ta="Unga playlist-a vera yaarum decide pannadhu. Headphone konduvaanga, phone-um use pannunga — aana 40 nimisham reels paathutu 'gym poinen'nu mattum sollaadheenga.">No one else picks your playlist. Bring headphones, bring your phone if you need it — just don't spend forty minutes on reels and call it a session.</p>
    </article>
+  </div>
+
+  <!-- Live Kitchen & Nutrition Menu Showcase -->
+  <div class="kitchen-showcase reveal">
+   <div style="margin-bottom:1.4rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem">
+    <div>
+     <span class="first" style="background:#25D366;color:#000;font-weight:900" data-en="TGM LIVE KITCHEN MENU" data-ta="TGM LIVE KITCHEN MENU">TGM LIVE KITCHEN MENU</span>
+     <h3 style="font-size:1.8rem;margin-top:.4rem" data-en="Fresh Healthy Food & Juices Prepared For You" data-ta="Unga Workout Mudinjadhum Pusu Pusaah Samaichu Tharuvom">Fresh Healthy Food & Juices Prepared For You</h3>
+    </div>
+    <a class="btn" style="padding:.5rem 1.1rem;font-size:.85rem;background:#25D366;color:#000;border:0" href="https://api.whatsapp.com/send?phone=919500441505&text=Hi%20Dinesh,%20I%20want%20to%20order%20from%20TGM%20Kitchen!" target="_blank" rel="noopener">
+     <svg aria-hidden="true" style="width:16px;height:16px"><use href="#i-wa"/></svg><span data-en="Order via WhatsApp" data-ta="WhatsApp-la Order Pannunga">Order via WhatsApp</span>
+    </a>
+   </div>
+
+   <div class="kitchen-showcase-grid">
+    <!-- Official Whiteboard Menu Photo -->
+    <div class="board-container">
+     <span class="board-tag">📋 In-Gym Menu Board</span>
+     <img src="WhatsApp Image 2026-09-24 at 8.27.01 AM.jpeg" alt="The Gym Moments Live Kitchen Whiteboard Menu & Price List" loading="lazy">
+    </div>
+
+    <!-- Food Cards & Price List Grid -->
+    <div>
+     <div class="food-cards-grid">
+      <div class="food-card">
+       <div class="food-img">
+        <img src="WhatsApp Image 2026-09-24 at 8.27.00 AM.jpeg" alt="Rainbow Fruit Cup" loading="lazy">
+       </div>
+       <div class="food-info">
+        <span class="food-title" data-en="Rainbow Fruit Cup" data-ta="Rainbow Fruit Cup">Rainbow Fruit Cup</span>
+        <div class="food-price">₹150</div>
+       </div>
+      </div>
+
+      <div class="food-card">
+       <div class="food-img">
+        <img src="WhatsApp Image 2026-09-24 at 8.26.38 AM.jpeg" alt="ABC Juice" loading="lazy">
+       </div>
+       <div class="food-info">
+        <span class="food-title" data-en="ABC Juice (Apple, Beet, Carrot)" data-ta="ABC Juice">ABC Juice</span>
+        <div class="food-price">₹80</div>
+       </div>
+      </div>
+
+      <div class="food-card">
+       <div class="food-img">
+        <img src="WhatsApp Image 2026-09-24 at 8.26.38 AM (1).jpeg" alt="Fresh Healthy Salad" loading="lazy">
+       </div>
+       <div class="food-info">
+        <span class="food-title" data-en="Veg / Chicken Salad" data-ta="Veg / Chicken Salad">Veg / Chicken Salad</span>
+        <div class="food-price">₹80 / ₹150</div>
+       </div>
+      </div>
+
+      <div class="food-card">
+       <div class="food-img">
+        <img src="WhatsApp Image 2026-09-24 at 8.26.12 AM.jpeg" alt="Dragonfruit Smoothie" loading="lazy">
+       </div>
+       <div class="food-info">
+        <span class="food-title" data-en="Dragonfruit Shake" data-ta="Dragonfruit Shake">Dragonfruit Shake</span>
+        <div class="food-price">₹150</div>
+       </div>
+      </div>
+     </div>
+
+     <!-- Quick Item Ticker List -->
+     <div class="menu-list-items">
+      <div class="menu-item-row">
+       <span>Boiled Eggs (2 No's)</span>
+       <span class="price-badge">₹25</span>
+      </div>
+      <div class="menu-item-row">
+       <span>Amla Juice</span>
+       <span class="price-badge">₹40</span>
+      </div>
+      <div class="menu-item-row">
+       <span>Lemon Juice</span>
+       <span class="price-badge">₹40</span>
+      </div>
+      <div class="menu-item-row">
+       <span>Black Coffee</span>
+       <span class="price-badge">₹20</span>
+      </div>
+     </div>
+    </div>
+   </div>
   </div>
  </div>
 </section>
